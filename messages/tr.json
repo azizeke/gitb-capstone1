@@ -1,0 +1,42 @@
+{
+  "Header": {
+    "nav": {
+      "bootcamps": "Bootcamp'ler",
+      "schedule": "Takvim",
+      "about": "Hakkımızda",
+      "contact": "İletişim"
+    },
+    "cta": "Kayıt Ol",
+    "openMenu": "Menüyü aç",
+    "logo": "Global IT"
+  },
+  "MobileMenu": {
+    "closeMenu": "Menüyü kapat",
+    "cta": "Kayıt Ol"
+  },
+  "Footer": {
+    "tagline": "Kariyerini değiştirecek bootcamp programları.",
+    "columns": {
+      "product": "Ürün",
+      "company": "Şirket",
+      "legal": "Yasal"
+    },
+    "links": {
+      "bootcamps": "Bootcamp'ler",
+      "schedule": "Takvim",
+      "pricing": "Fiyatlandırma",
+      "about": "Hakkımızda",
+      "contact": "İletişim",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Koşulları"
+    },
+    "copyright": "Global IT Bootcamp. Tüm hakları saklıdır."
+  },
+  "ThemeToggle": {
+    "switchToLight": "Açık temaya geç",
+    "switchToDark": "Koyu temaya geç"
+  },
+  "HomePage": {
+    "title": "Ana sayfa EPIC C'de gelecek"
+  }
+}

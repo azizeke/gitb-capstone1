@@ -1,33 +1,34 @@
 'use client';
 
-import { useState } from 'react';
-
-const locales = ['TR', 'EN'] as const;
+import { useLocale } from 'next-intl';
+import { Link, usePathname } from '@/i18n/navigation';
+import { routing } from '@/i18n/routing';
 
 /**
- * Şimdilik yalnızca görsel: hangi dilin seçili olduğunu gösteriyor.
- * Gerçek /tr ve /en route'ları arasında geçiş yapma mantığı B-01'de
- * next-intl ile birlikte eklenecek.
+ * Aynı sayfada kalarak dil değiştirir (ana sayfaya atmaz). `usePathname()`
+ * locale önekini içermeyen yolu döndürür; her <Link> kendi `locale`
+ * prop'uyla o dile ait URL'i üretir.
  */
 export function LocaleSwitcher() {
-  const [active, setActive] = useState<(typeof locales)[number]>('TR');
+  const activeLocale = useLocale();
+  const pathname = usePathname();
 
   return (
     <div className="border-border flex items-center gap-0.5 rounded-md border p-0.5 text-xs font-medium">
-      {locales.map((locale) => (
-        <button
+      {routing.locales.map((locale) => (
+        <Link
           key={locale}
-          type="button"
-          onClick={() => setActive(locale)}
-          aria-pressed={active === locale}
+          href={pathname}
+          locale={locale}
+          aria-pressed={activeLocale === locale}
           className={
-            active === locale
+            activeLocale === locale
               ? 'bg-primary text-primary-foreground rounded px-2 py-1'
               : 'text-muted hover:text-text rounded px-2 py-1'
           }
         >
-          {locale}
-        </button>
+          {locale.toUpperCase()}
+        </Link>
       ))}
     </div>
   );

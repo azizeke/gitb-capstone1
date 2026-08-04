@@ -1,5 +1,6 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import type { SVGProps } from 'react';
+import { Link } from '@/i18n/navigation';
 
 /**
  * lucide-react marka/logo ikonlarını (Facebook, Instagram, LinkedIn, Twitter)
@@ -40,31 +41,6 @@ function FacebookIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-const footerColumns = [
-  {
-    title: 'Ürün',
-    links: [
-      { href: '/bootcamps', label: 'Bootcamps' },
-      { href: '/schedule', label: 'Schedule' },
-      { href: '/#pricing', label: 'Fiyatlandırma' },
-    ],
-  },
-  {
-    title: 'Şirket',
-    links: [
-      { href: '/about', label: 'Hakkımızda' },
-      { href: '/contact', label: 'İletişim' },
-    ],
-  },
-  {
-    title: 'Yasal',
-    links: [
-      { href: '/privacy', label: 'Gizlilik Politikası' },
-      { href: '/terms', label: 'Kullanım Koşulları' },
-    ],
-  },
-];
-
 const socialLinks = [
   { href: 'https://twitter.com', label: 'Twitter', Icon: TwitterIcon },
   { href: 'https://instagram.com', label: 'Instagram', Icon: InstagramIcon },
@@ -73,7 +49,33 @@ const socialLinks = [
 ];
 
 export function Footer() {
+  const t = useTranslations('Footer');
   const year = new Date().getFullYear();
+
+  const footerColumns = [
+    {
+      title: t('columns.product'),
+      links: [
+        { href: '/bootcamps', label: t('links.bootcamps') },
+        { href: '/schedule', label: t('links.schedule') },
+        { href: '/#pricing', label: t('links.pricing') },
+      ],
+    },
+    {
+      title: t('columns.company'),
+      links: [
+        { href: '/about', label: t('links.about') },
+        { href: '/contact', label: t('links.contact') },
+      ],
+    },
+    {
+      title: t('columns.legal'),
+      links: [
+        { href: '/privacy', label: t('links.privacy') },
+        { href: '/terms', label: t('links.terms') },
+      ],
+    },
+  ];
 
   return (
     <footer className="border-border bg-surface border-t">
@@ -81,7 +83,7 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="col-span-2 md:col-span-1">
             <span className="font-heading text-lg font-bold">Global IT</span>
-            <p className="text-muted mt-2 text-sm">Kariyerini değiştirecek bootcamp programları.</p>
+            <p className="text-muted mt-2 text-sm">{t('tagline')}</p>
           </div>
 
           {footerColumns.map((column) => (
@@ -105,7 +107,7 @@ export function Footer() {
 
         <div className="border-border mt-10 flex flex-col items-center justify-between gap-4 border-t pt-6 sm:flex-row">
           <p className="text-muted text-xs">
-            &copy; {year} Global IT Bootcamp. Tüm hakları saklıdır.
+            &copy; {year} {t('copyright')}
           </p>
           <div className="flex items-center gap-3">
             {socialLinks.map(({ href, label, Icon }) => (

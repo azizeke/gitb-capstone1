@@ -1,0 +1,42 @@
+{
+  "Header": {
+    "nav": {
+      "bootcamps": "Bootcamps",
+      "schedule": "Schedule",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "cta": "Sign Up",
+    "openMenu": "Open menu",
+    "logo": "Global IT"
+  },
+  "MobileMenu": {
+    "closeMenu": "Close menu",
+    "cta": "Sign Up"
+  },
+  "Footer": {
+    "tagline": "Bootcamp programs that change your career.",
+    "columns": {
+      "product": "Product",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "bootcamps": "Bootcamps",
+      "schedule": "Schedule",
+      "pricing": "Pricing",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "copyright": "Global IT Bootcamp. All rights reserved."
+  },
+  "ThemeToggle": {
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme"
+  },
+  "HomePage": {
+    "title": "Homepage coming in EPIC C"
+  }
+}

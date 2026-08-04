@@ -1,6 +1,7 @@
 'use client';
 
 import { Moon, Sun } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 /**
@@ -11,6 +12,7 @@ import { useState } from 'react';
  * temel arayüzü sağlıyor.
  */
 export function ThemeToggle() {
+  const t = useTranslations('ThemeToggle');
   const [isDark, setIsDark] = useState(false);
 
   function toggleTheme() {
@@ -22,7 +24,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggleTheme}
-      aria-label={isDark ? 'Açık temaya geç' : 'Koyu temaya geç'}
+      aria-label={isDark ? t('switchToLight') : t('switchToDark')}
       className="text-text hover:bg-surface focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-md transition-colors focus-visible:ring-2 focus-visible:outline-none"
     >
       {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}

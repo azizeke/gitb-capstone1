@@ -1,19 +1,13 @@
 'use client';
 
 import { Menu } from 'lucide-react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { Button } from '@/components/ui';
+import { Link } from '@/i18n/navigation';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { MobileMenu } from './MobileMenu';
 import { ThemeToggle } from './ThemeToggle';
-
-const navLinks = [
-  { href: '/bootcamps', label: 'Bootcamps' },
-  { href: '/schedule', label: 'Schedule' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-];
 
 /**
  * Header davranışı: sticky (kaydırmada her zaman görünür kalır).
@@ -22,13 +16,21 @@ const navLinks = [
  * edildi (README'de gerekçelendirildi).
  */
 export function Header() {
+  const t = useTranslations('Header');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: '/bootcamps', label: t('nav.bootcamps') },
+    { href: '/schedule', label: t('nav.schedule') },
+    { href: '/about', label: t('nav.about') },
+    { href: '/contact', label: t('nav.contact') },
+  ];
 
   return (
     <header className="border-border bg-background/80 sticky top-0 z-40 border-b backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="font-heading text-lg font-bold">
-          Global IT
+          {t('logo')}
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -46,13 +48,13 @@ export function Header() {
         <div className="hidden items-center gap-3 md:flex">
           <LocaleSwitcher />
           <ThemeToggle />
-          <Button size="sm">Kayıt Ol</Button>
+          <Button size="sm">{t('cta')}</Button>
         </div>
 
         <button
           type="button"
           onClick={() => setIsMobileMenuOpen(true)}
-          aria-label="Menüyü aç"
+          aria-label={t('openMenu')}
           className="text-text hover:bg-surface flex h-9 w-9 items-center justify-center rounded-md md:hidden"
         >
           <Menu className="h-5 w-5" />

@@ -1,9 +1,10 @@
 'use client';
 
 import { X } from 'lucide-react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui';
+import { Link } from '@/i18n/navigation';
 
 export interface MobileMenuProps {
   isOpen: boolean;
@@ -20,6 +21,8 @@ export interface MobileMenuProps {
  * - Kapandığında odak, menüyü açan hamburger butonuna geri döner
  */
 export function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) {
+  const t = useTranslations('MobileMenu');
+  const tHeader = useTranslations('Header');
   const panelRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -69,12 +72,12 @@ export function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) {
       className="bg-background fixed inset-0 z-50 flex flex-col md:hidden"
     >
       <div className="border-border flex items-center justify-between border-b px-6 py-4">
-        <span className="font-heading text-lg font-bold">Global IT</span>
+        <span className="font-heading text-lg font-bold">{tHeader('logo')}</span>
         <button
           ref={closeButtonRef}
           type="button"
           onClick={onClose}
-          aria-label="Menüyü kapat"
+          aria-label={t('closeMenu')}
           className="text-text hover:bg-surface focus-visible:ring-primary flex h-9 w-9 items-center justify-center rounded-md focus-visible:ring-2 focus-visible:outline-none"
         >
           <X className="h-5 w-5" />
@@ -96,7 +99,7 @@ export function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) {
 
       <div className="border-border border-t px-6 py-4">
         <Button className="w-full" onClick={onClose}>
-          Kayıt Ol
+          {t('cta')}
         </Button>
       </div>
     </div>
