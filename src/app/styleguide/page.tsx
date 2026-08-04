@@ -1,6 +1,17 @@
 'use client';
 
 import { useState } from 'react';
+import {
+  Badge,
+  Button,
+  Card,
+  Checkbox,
+  Input,
+  Select,
+  Skeleton,
+  Spinner,
+  Textarea,
+} from '@/components/ui';
 
 /**
  * /styleguide
@@ -152,6 +163,63 @@ export default function StyleguidePage() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Komponentler (A-03 önizleme) */}
+      <section className="mt-16">
+        <h2 className="font-heading mb-4 text-xl font-semibold">Temel Komponentler</h2>
+        <Card className="space-y-8">
+          <div>
+            <p className="text-muted mb-2 text-xs font-medium">Button</p>
+            <div className="flex flex-wrap items-center gap-3">
+              <Button variant="primary">Primary</Button>
+              <Button variant="secondary">Secondary</Button>
+              <Button variant="ghost">Ghost</Button>
+              <Button size="sm">Small</Button>
+              <Button size="lg">Large</Button>
+              <Button loading>Yükleniyor</Button>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-muted mb-2 text-xs font-medium">Badge</p>
+            <div className="flex flex-wrap gap-2">
+              <Badge>Default</Badge>
+              <Badge variant="success">Success</Badge>
+              <Badge variant="warning">Warning</Badge>
+              <Badge variant="error">Error</Badge>
+            </div>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Input label="Ad Soyad" placeholder="Örn. Ayşe Yılmaz" />
+            <Input label="E-posta" placeholder="ornek@mail.com" error="Geçerli bir e-posta girin" />
+            <Select
+              label="Seviye"
+              options={[
+                { value: 'beginner', label: 'Beginner' },
+                { value: 'intermediate', label: 'Intermediate' },
+                { value: 'advanced', label: 'Advanced' },
+              ]}
+            />
+            <div className="flex items-end">
+              <Checkbox label="Kullanım koşullarını kabul ediyorum" />
+            </div>
+          </div>
+
+          <Textarea label="Mesaj" placeholder="Mesajınızı yazın..." />
+
+          <div>
+            <p className="text-muted mb-2 text-xs font-medium">Skeleton & Spinner</p>
+            <div className="flex flex-wrap items-center gap-4">
+              <Skeleton className="h-10 w-32" />
+              <Skeleton className="h-10 w-10 rounded-full" />
+              <Spinner size="sm" />
+              <Spinner size="md" />
+              <Spinner size="lg" />
+            </div>
+          </div>
+        </Card>
       </section>
     </main>
   );
