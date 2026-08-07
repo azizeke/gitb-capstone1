@@ -50,6 +50,22 @@
     "switchToLight": "Switch to light theme",
     "switchToDark": "Switch to dark theme"
   },
+  "BootcampsPage": {
+    "title": "Explore Bootcamps",
+    "subtitle": "Find the program that matches where you want your career to go.",
+    "searchPlaceholder": "Search bootcamps...",
+    "categoryLabel": "Category",
+    "levelLabel": "Level",
+    "allLevels": "All Levels",
+    "sortLabel": "Sort by",
+    "sortPopular": "Most Popular",
+    "sortPriceAsc": "Price: Low to High",
+    "sortDuration": "Duration: Shortest First",
+    "resultsCount": "{count, plural, one {# program found} other {# programs found}}",
+    "emptyTitle": "No bootcamps match your filters",
+    "emptyDescription": "Try adjusting your search or clearing the filters below.",
+    "clearFilters": "Clear Filters"
+  },
   "HomePage": {
     "hero": {
       "badge": "AI-Powered Learning Platform",

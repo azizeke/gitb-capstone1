@@ -50,6 +50,22 @@
     "switchToLight": "Açık temaya geç",
     "switchToDark": "Koyu temaya geç"
   },
+  "BootcampsPage": {
+    "title": "Bootcamp'leri Keşfet",
+    "subtitle": "Kariyerini nereye taşımak istediğine uygun programı bul.",
+    "searchPlaceholder": "Bootcamp ara...",
+    "categoryLabel": "Kategori",
+    "levelLabel": "Seviye",
+    "allLevels": "Tüm Seviyeler",
+    "sortLabel": "Sırala",
+    "sortPopular": "En Popüler",
+    "sortPriceAsc": "Fiyat: Düşükten Yükseğe",
+    "sortDuration": "Süre: En Kısadan Başla",
+    "resultsCount": "{count, plural, other {# program bulundu}}",
+    "emptyTitle": "Filtrelerine uyan bootcamp yok",
+    "emptyDescription": "Aramanı değiştirmeyi veya aşağıdaki filtreleri temizlemeyi dene.",
+    "clearFilters": "Filtreleri Temizle"
+  },
   "HomePage": {
     "hero": {
       "badge": "Yapay Zeka Destekli Öğrenme Platformu",

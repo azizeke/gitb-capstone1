@@ -424,8 +424,7 @@ export const bootcamps: Bootcamp[] = [
       "SQL, Python ve BI araçlarıyla veriden iş kararlarına giden yolu öğren.",
     description:
       "İş zekası ve veri analitiği alanına giriş yapmak isteyenler için tasarlanmış bu program; SQL, Python (pandas) ve Power BI / Tableau kullanarak veri setlerini analiz etmeyi, görselleştirmeyi ve paydaşlara sunmayı öğretir.",
-    heroImage:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=675&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=1200&h=675&fit=crop&sat=-40',
     tags: ['SQL', 'Python', 'Power BI', 'Tableau'],
     curriculum: [
       {
