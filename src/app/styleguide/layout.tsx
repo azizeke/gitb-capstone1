@@ -16,7 +16,6 @@ export default function StyleguideLayout({ children }: { children: React.ReactNo
       suppressHydrationWarning
     >
       <body className="bg-background text-text min-h-full">
-        {/* eslint-disable-next-line react/no-danger */}
         <script suppressHydrationWarning dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         {children}
       </body>
