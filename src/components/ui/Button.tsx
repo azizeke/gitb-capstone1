@@ -1,8 +1,8 @@
 import { type ButtonHTMLAttributes, forwardRef } from 'react';
 import { cn } from '@/lib/cn';
 
-type ButtonVariant = 'primary' | 'secondary' | 'ghost';
-type ButtonSize = 'sm' | 'md' | 'lg';
+export type ButtonVariant = 'primary' | 'secondary' | 'ghost';
+export type ButtonSize = 'sm' | 'md' | 'lg';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
@@ -22,6 +22,22 @@ const sizeStyles: Record<ButtonSize, string> = {
   lg: 'h-12 px-6 text-base',
 };
 
+/**
+ * Buton görünümünü üreten paylaşılan fonksiyon. Bir `<Link>`'i buton gibi
+ * göstermek gerektiğinde (örn. Hero CTA'ları) `<button>` içine `<a>`
+ * koymak yerine bu fonksiyon kullanılır — böylece stil tek bir yerden
+ * yönetilir ve geçersiz HTML iç içeliği (nested interactive elements)
+ * oluşmaz.
+ */
+export function buttonStyles(variant: ButtonVariant = 'primary', size: ButtonSize = 'md') {
+  return cn(
+    'inline-flex items-center justify-center gap-2 rounded-md font-medium transition-colors',
+    'focus-visible:ring-primary focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none',
+    variantStyles[variant],
+    sizeStyles[size],
+  );
+}
+
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     { variant = 'primary', size = 'md', loading = false, disabled, className, children, ...props },
@@ -32,11 +48,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={disabled || loading}
         className={cn(
-          'inline-flex items-center justify-center gap-2 rounded-md font-medium transition-colors',
-          'focus-visible:ring-primary focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none',
+          buttonStyles(variant, size),
           'disabled:cursor-not-allowed disabled:opacity-50',
-          variantStyles[variant],
-          sizeStyles[size],
           className,
         )}
         {...props}

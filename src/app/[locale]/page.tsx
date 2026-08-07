@@ -1,16 +1,29 @@
-import { useTranslations } from 'next-intl';
+import { CategoryGrid } from '@/components/sections/CategoryGrid';
+import { ClosingCta } from '@/components/sections/ClosingCta';
+import { FeaturedPrograms } from '@/components/sections/FeaturedPrograms';
+import { Features } from '@/components/sections/Features';
+import { Hero } from '@/components/sections/Hero';
+import { HowItWorks } from '@/components/sections/HowItWorks';
+import { Instructors } from '@/components/sections/Instructors';
+import { Newsletter } from '@/components/sections/Newsletter';
+import { Pricing } from '@/components/sections/Pricing';
+import { StatsCounter } from '@/components/sections/StatsCounter';
+import { Testimonials } from '@/components/sections/Testimonials';
 
-/**
- * Gerçek Landing içeriği (hero, sosyal kanıt, fiyatlandırma vb.) EPIC C'de
- * gelecek. Bu, i18n altyapısının çalıştığını doğrulamak için geçici bir
- * yer tutucudur.
- */
 export default function HomePage() {
-  const t = useTranslations('HomePage');
-
   return (
-    <main className="mx-auto max-w-3xl px-6 py-24 text-center">
-      <h1 className="font-heading text-3xl font-bold">{t('title')}</h1>
-    </main>
+    <>
+      <Hero />
+      <StatsCounter />
+      <FeaturedPrograms />
+      <CategoryGrid />
+      <Features />
+      <HowItWorks />
+      <Instructors />
+      <Testimonials />
+      <Pricing />
+      <Newsletter />
+      <ClosingCta />
+    </>
   );
 }

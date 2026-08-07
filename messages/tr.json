@@ -1,4 +1,18 @@
 {
+  "Common": {
+    "levels": {
+      "beginner": "Başlangıç",
+      "intermediate": "Orta",
+      "advanced": "İleri"
+    },
+    "formats": {
+      "online": "Online",
+      "hybrid": "Hibrit",
+      "onsite": "Yüz Yüze"
+    },
+    "weeks": "{count} hafta",
+    "viewProgram": "Programı Gör"
+  },
   "Header": {
     "nav": {
       "bootcamps": "Bootcamp'ler",
@@ -37,6 +51,114 @@
     "switchToDark": "Koyu temaya geç"
   },
   "HomePage": {
-    "title": "Ana sayfa EPIC C'de gelecek"
+    "hero": {
+      "badge": "Yapay Zeka Destekli Öğrenme Platformu",
+      "title": "Teknoloji kariyerine yıllar değil, haftalar içinde başla",
+      "subtitle": "Gerçek mühendisler, gerçek projeler ve gerçek işe alım sonuçlarıyla kurulmuş bir bootcamp'e katıl.",
+      "ctaPrimary": "Ücretsiz Öğrenmeye Başla",
+      "ctaSecondary": "Programlara Göz At"
+    },
+    "stats": {
+      "graduates": "Mezun",
+      "employmentRate": "İstihdam Oranı",
+      "partners": "İşe Alım Ortağı"
+    },
+    "counters": {
+      "graduates": "Mezun",
+      "employmentRate": "İstihdam Oranı",
+      "partners": "Şirket Ortağı",
+      "countries": "Ülke"
+    },
+    "featuredPrograms": {
+      "title": "Öne Çıkan Programlar",
+      "subtitle": "En güçlü işe alım sonuçlarına sahip, özenle seçilmiş programlar.",
+      "viewAll": "Tümünü Gör"
+    },
+    "categories": {
+      "title": "Kategoriye Göre Keşfet",
+      "subtitle": "Kariyerini nereye taşımak istediğine uygun yolu bul.",
+      "coursesLabel": "kurs"
+    },
+    "features": {
+      "title": "Neden Global IT",
+      "subtitle": "Öğrenmekten işe alınmaya giden yolda ihtiyacın olan her şey.",
+      "items": [
+        {
+          "title": "Gerçek dünya projeleri",
+          "description": "Her modül, bir sınavla değil, mülakatta gösterebileceğin bir projeyle biter."
+        },
+        {
+          "title": "Canlı mentorluk",
+          "description": "Girmek istediğin alanda hâlâ aktif çalışan mühendislerle haftalık birebir görüşmeler."
+        },
+        {
+          "title": "Küçük gruplar",
+          "description": "Sınıflar küçük tutulur, böylece eğitmenler adını ve hedeflerini gerçekten bilir."
+        },
+        {
+          "title": "Kariyer desteği",
+          "description": "CV incelemesi, mülakat provaları ve işe alım ortaklarıyla doğrudan tanıştırma."
+        },
+        {
+          "title": "Esnek formatlar",
+          "description": "Online, hibrit veya yüz yüze — programına ve öğrenme tarzına uyanı seç."
+        },
+        {
+          "title": "Süresiz erişim",
+          "description": "Mezuniyet sonrasında da kurs materyallerine ve mezun topluluğuna erişimini koru."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Nasıl Çalışır",
+      "subtitle": "Başvurudan işteki ilk gününe kadar.",
+      "steps": [
+        {
+          "title": "Başvur",
+          "description": "Hedeflerini kısa bir başvuruda anlat — kodlama testi gerekmez."
+        },
+        {
+          "title": "Öğren",
+          "description": "Canlı dersler, projeler ve mentorlukla yapılandırılmış bir müfredatı takip et."
+        },
+        {
+          "title": "Üret",
+          "description": "Biri takım projesi olmak üzere gerçek projelerden oluşan bir portföy oluştur."
+        },
+        {
+          "title": "İşe Gir",
+          "description": "CV'n, mülakatların ve işveren tanıştırmaların için kariyer ekibimizle çalış."
+        }
+      ]
+    },
+    "instructors": {
+      "title": "Sektör Uzmanlarından Öğren",
+      "subtitle": "Sadece teori anlatmayan, gerçek sistemler kuran eğitmenler."
+    },
+    "testimonials": {
+      "title": "Mezunlarımız Ne Diyor",
+      "subtitle": "Kendi ağızlarından gerçek sonuçlar."
+    },
+    "pricing": {
+      "title": "Basit, Şeffaf Fiyatlandırma",
+      "subtitle": "Sana en uygun öğrenme formatını seç.",
+      "perMonth": "/ay",
+      "custom": "Özel",
+      "contactSales": "Satış Ekibiyle İletişime Geç",
+      "getStarted": "Başla",
+      "mostPopular": "En Popüler"
+    },
+    "newsletter": {
+      "title": "Haberdar ol",
+      "subtitle": "Bootcamp güncellemeleri, kariyer ipuçları ve yeni kohortlara erken erişim.",
+      "placeholder": "E-posta adresini gir",
+      "submit": "Abone Ol",
+      "success": "Teşekkürler! Onaylamak için gelen kutunu kontrol et."
+    },
+    "closingCta": {
+      "title": "Kariyerini değiştirmeye hazır mısın?",
+      "subtitle": "Bir sonraki kohort için başvurular yakında kapanıyor.",
+      "cta": "Şimdi Başvur"
+    }
   }
 }

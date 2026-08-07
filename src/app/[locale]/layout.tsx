@@ -38,6 +38,7 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="bg-background text-text flex min-h-full flex-col">
+
         <script suppressHydrationWarning dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <NextIntlClientProvider locale={locale}>
           <Header />

@@ -1,4 +1,18 @@
 {
+  "Common": {
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced"
+    },
+    "formats": {
+      "online": "Online",
+      "hybrid": "Hybrid",
+      "onsite": "Onsite"
+    },
+    "weeks": "{count} weeks",
+    "viewProgram": "View Program"
+  },
   "Header": {
     "nav": {
       "bootcamps": "Bootcamps",
@@ -37,6 +51,114 @@
     "switchToDark": "Switch to dark theme"
   },
   "HomePage": {
-    "title": "Homepage coming in EPIC C"
+    "hero": {
+      "badge": "AI-Powered Learning Platform",
+      "title": "Launch your tech career in weeks, not years",
+      "subtitle": "Join a bootcamp built with real engineers, real projects, and real hiring outcomes.",
+      "ctaPrimary": "Start Learning Free",
+      "ctaSecondary": "Browse Programs"
+    },
+    "stats": {
+      "graduates": "Graduates",
+      "employmentRate": "Employment Rate",
+      "partners": "Hiring Partners"
+    },
+    "counters": {
+      "graduates": "Graduates",
+      "employmentRate": "Employment Rate",
+      "partners": "Company Partners",
+      "countries": "Countries"
+    },
+    "featuredPrograms": {
+      "title": "Featured Programs",
+      "subtitle": "Hand-picked programs with the strongest hiring outcomes.",
+      "viewAll": "Browse All"
+    },
+    "categories": {
+      "title": "Explore by Category",
+      "subtitle": "Find the track that matches where you want your career to go.",
+      "coursesLabel": "courses"
+    },
+    "features": {
+      "title": "Why Choose Global IT",
+      "subtitle": "Everything you need to go from learning to hired.",
+      "items": [
+        {
+          "title": "Real-world projects",
+          "description": "Every module ends with a project you can show in an interview, not a quiz."
+        },
+        {
+          "title": "Live mentorship",
+          "description": "Weekly 1:1 sessions with engineers currently working in the field you're entering."
+        },
+        {
+          "title": "Small cohorts",
+          "description": "Classes stay small so instructors actually know your name and your goals."
+        },
+        {
+          "title": "Career support",
+          "description": "CV reviews, mock interviews, and direct introductions to hiring partners."
+        },
+        {
+          "title": "Flexible formats",
+          "description": "Online, hybrid, or onsite — choose what fits your schedule and learning style."
+        },
+        {
+          "title": "Lifetime access",
+          "description": "Keep access to course materials and the alumni community after graduation."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "From application to your first day on the job.",
+      "steps": [
+        {
+          "title": "Apply",
+          "description": "Tell us about your goals in a short application — no coding test required."
+        },
+        {
+          "title": "Learn",
+          "description": "Follow a structured curriculum with live classes, projects, and mentorship."
+        },
+        {
+          "title": "Build",
+          "description": "Ship a portfolio of real projects, including one built with a team."
+        },
+        {
+          "title": "Get Hired",
+          "description": "Work with our career team on your CV, interviews, and employer introductions."
+        }
+      ]
+    },
+    "instructors": {
+      "title": "Learn from Industry Experts",
+      "subtitle": "Instructors who build production systems, not just teach theory."
+    },
+    "testimonials": {
+      "title": "What Our Graduates Say",
+      "subtitle": "Real outcomes, in their own words."
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the format that fits how you learn best.",
+      "perMonth": "/month",
+      "custom": "Custom",
+      "contactSales": "Contact Sales",
+      "getStarted": "Get Started",
+      "mostPopular": "Most Popular"
+    },
+    "newsletter": {
+      "title": "Stay in the loop",
+      "subtitle": "Get bootcamp updates, career tips, and early access to new cohorts.",
+      "placeholder": "Enter your email",
+      "submit": "Subscribe",
+      "success": "Thanks! Check your inbox to confirm."
+    },
+    "closingCta": {
+      "title": "Ready to change your career?",
+      "subtitle": "Applications for the next cohort close soon.",
+      "cta": "Apply Now"
+    }
   }
 }
