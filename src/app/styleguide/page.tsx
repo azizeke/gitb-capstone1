@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useSyncExternalStore } from 'react';
 import {
   Badge,
   Button,
@@ -12,16 +12,16 @@ import {
   Spinner,
   Textarea,
 } from '@/components/ui';
+import { getThemeServerSnapshot, getThemeSnapshot, setTheme, subscribeToTheme } from '@/lib/theme-store';
 
 /**
  * /styleguide
  *
  * Design token'ların canlı referansı. A-02 kabul kriterini karşılar.
  *
- * Buradaki dark/light geçiş butonu SADECE bu sayfada token'ları önizlemek
- * içindir; kalıcı değildir ve <html> class'ını doğrudan değiştirir. Gerçek
- * tema sistemi (localStorage/cookie kalıcılığı, FOUC önleme, sistem tercihi
- * okuma) B-02 görev kartında kurulacak.
+ * Dark/light butonu, Header'daki ile aynı paylaşılan tema deposunu
+ * (src/lib/theme-store.ts) kullanıyor — yani B-02 ile birlikte bu buton
+ * da artık gerçekten kalıcı (localStorage'a yazıyor).
  */
 
 const colorTokens: { name: string; className: string; description: string }[] = [
@@ -65,12 +65,7 @@ const shadowScale = [
 ];
 
 export default function StyleguidePage() {
-  const [isDark, setIsDark] = useState(false);
-
-  function toggleDemoTheme() {
-    document.documentElement.classList.toggle('dark');
-    setIsDark((prev) => !prev);
-  }
+  const isDark = useSyncExternalStore(subscribeToTheme, getThemeSnapshot, getThemeServerSnapshot);
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-16">
@@ -82,7 +77,7 @@ export default function StyleguidePage() {
           </p>
         </div>
         <button
-          onClick={toggleDemoTheme}
+          onClick={() => setTheme(!isDark)}
           className="border-border bg-surface hover:bg-border shrink-0 rounded-md border px-4 py-2 text-sm font-medium"
         >
           {isDark ? '☀️ Light önizle' : '🌙 Dark önizle'}

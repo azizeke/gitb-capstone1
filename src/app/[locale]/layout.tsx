@@ -5,6 +5,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
 import { routing } from '@/i18n/routing';
 import { inter, spaceGrotesk } from '@/lib/fonts';
+import { themeInitScript } from '@/lib/theme-script';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -25,15 +26,20 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  // Bilinmeyen bir locale segmenti gelirse (örn. /fr) 404 göster.
   const isValidLocale = routing.locales.includes(locale as (typeof routing.locales)[number]);
   if (!isValidLocale) {
     notFound();
   }
 
   return (
-    <html lang={locale} className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}>
+    <html
+      lang={locale}
+      className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <body className="bg-background text-text flex min-h-full flex-col">
+        {/* eslint-disable-next-line react/no-danger */}
+        <script suppressHydrationWarning dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <NextIntlClientProvider locale={locale}>
           <Header />
           <div className="flex-1">{children}</div>

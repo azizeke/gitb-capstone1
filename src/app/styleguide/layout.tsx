@@ -1,14 +1,8 @@
 import type { Metadata } from 'next';
 import { inter, spaceGrotesk } from '@/lib/fonts';
+import { themeInitScript } from '@/lib/theme-script';
 import '../globals.css';
 
-/**
- * /styleguide, [locale] segmentinin DIŞINDA kendi root layout'una sahip
- * (bkz. Next.js "multiple root layouts" deseni). Bu bilinçli bir tercih:
- * styleguide, üründe listelenen bir sayfa değil, sadece geliştiriciler
- * için bir tasarım referansı olduğu için çevrilmiyor ve Header/Footer
- * içermiyor.
- */
 export const metadata: Metadata = {
   title: 'Styleguide — Global IT Bootcamp',
   robots: 'noindex, nofollow',
@@ -16,8 +10,16 @@ export const metadata: Metadata = {
 
 export default function StyleguideLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}>
-      <body className="bg-background text-text min-h-full">{children}</body>
+    <html
+      lang="en"
+      className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}
+      suppressHydrationWarning
+    >
+      <body className="bg-background text-text min-h-full">
+        {/* eslint-disable-next-line react/no-danger */}
+        <script suppressHydrationWarning dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        {children}
+      </body>
     </html>
   );
 }
