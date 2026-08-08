@@ -3,7 +3,7 @@
 import { Menu } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-import { Button } from '@/components/ui';
+import { buttonStyles } from '@/components/ui';
 import { Link } from '@/i18n/navigation';
 import { LocaleSwitcher } from './LocaleSwitcher';
 import { MobileMenu } from './MobileMenu';
@@ -48,7 +48,9 @@ export function Header() {
         <div className="hidden items-center gap-3 md:flex">
           <LocaleSwitcher />
           <ThemeToggle />
-          <Button size="sm">{t('cta')}</Button>
+          <Link href="/auth/register" className={buttonStyles('primary', 'sm')}>
+            {t('cta')}
+          </Link>
         </div>
 
         <button

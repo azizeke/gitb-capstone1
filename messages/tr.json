@@ -104,6 +104,123 @@
     "emptyDescription": "Aramanı değiştirmeyi veya aşağıdaki filtreleri temizlemeyi dene.",
     "clearFilters": "Filtreleri Temizle"
   },
+  "AboutPage": {
+    "title": "Global IT Hakkında",
+    "subtitle": "Kariyer değiştirenleri, gerçek mentorluk ve gerçek sonuçlarla işe alınan mühendislere dönüştürüyoruz.",
+    "missionTitle": "Misyonumuz",
+    "missionText": "Teknoloji kariyerinin dört yıllık bir üniversite eğitimi ya da yıllarca kendi kendine öğrenmeyi gerektirmemesi gerektiğine inanıyoruz. Global IT, motivasyonlu insanlara gerçek mühendislik işlerine giden, mentor eşliğinde, yapılandırılmış bir yol sunmak için kuruldu — hâlâ yazılım geliştiren insanlar tarafından verilen, üst düzey bir bootcamp titizliğiyle.",
+    "statsGraduates": "Mezun",
+    "statsHiringRate": "İşe Alım Oranı",
+    "statsPartners": "İşe Alım Ortağı",
+    "statsFounded": "Kuruluş",
+    "teamTitle": "Eğitmenlerimizle Tanışın",
+    "teamSubtitle": "Sana gerçekten ders verecek olan kişiler.",
+    "timelineTitle": "Yolculuğumuz",
+    "timeline": [
+      {
+        "year": "2019",
+        "title": "Amsterdam'da Kuruldu",
+        "description": "18 öğrencilik tek bir 12 haftalık web geliştirme kohortuyla başladık."
+      },
+      {
+        "year": "2021",
+        "title": "Veri & Bulut'a Genişledik",
+        "description": "Güçlü işveren talebi üzerine Data Engineering ve Cloud & DevOps programlarını başlattık."
+      },
+      {
+        "year": "2023",
+        "title": "2.000. Mezun",
+        "description": "6 ay içinde %85'in üzerinde istihdam oranıyla 2.000 mezunu geçtik."
+      },
+      {
+        "year": "2025",
+        "title": "Hibrit & AI Programları",
+        "description": "Hibrit kohortları ve Applied AI & LLM programlarını tanıttık."
+      }
+    ],
+    "partnersTitle": "İşe Alım Ortaklarımız"
+  },
+  "ContactPage": {
+    "title": "Bize Ulaş",
+    "subtitle": "Programlar hakkında sorular mı var? Ekibimiz genellikle bir iş günü içinde yanıt veriyor.",
+    "nameLabel": "Ad Soyad",
+    "emailLabel": "E-posta",
+    "subjectLabel": "Konu",
+    "messageLabel": "Mesaj",
+    "submit": "Mesaj Gönder",
+    "submitting": "Gönderiliyor...",
+    "successMessage": "Ulaştığın için teşekkürler! Bir iş günü içinde sana geri döneceğiz.",
+    "errors": {
+      "nameRequired": "Lütfen adını gir.",
+      "emailRequired": "Lütfen e-posta adresini gir.",
+      "emailInvalid": "Lütfen geçerli bir e-posta adresi gir.",
+      "subjectRequired": "Lütfen bir konu gir.",
+      "messageRequired": "Lütfen bir mesaj gir.",
+      "messageTooShort": "Mesajın en az 20 karakter olmalı."
+    },
+    "altTitle": "Bize Ulaşmanın Diğer Yolları",
+    "emailUsLabel": "E-posta gönder",
+    "callUsLabel": "Bizi ara",
+    "visitUsLabel": "Bizi ziyaret et",
+    "address": "Herengracht 182, 1016 BR Amsterdam, Hollanda",
+    "mapCaption": "Amsterdam ofisimiz"
+  },
+  "LoginPage": {
+    "title": "Tekrar hoş geldin",
+    "subtitle": "Programına devam etmek için giriş yap.",
+    "emailLabel": "E-posta",
+    "passwordLabel": "Şifre",
+    "showPassword": "Şifreyi göster",
+    "hidePassword": "Şifreyi gizle",
+    "submit": "Giriş Yap",
+    "submitting": "Giriş yapılıyor...",
+    "forgotPassword": "Şifremi unuttum",
+    "noAccount": "Hesabın yok mu?",
+    "registerLink": "Kayıt ol",
+    "invalidCredentials": "E-posta veya şifre hatalı. demo@globalit.dev / demo1234 dene.",
+    "success": "Giriş başarılı. Yönlendiriliyorsun...",
+    "errors": {
+      "emailRequired": "Lütfen e-posta adresini gir.",
+      "emailInvalid": "Lütfen geçerli bir e-posta adresi gir.",
+      "passwordRequired": "Lütfen şifreni gir."
+    },
+    "demoHint": "Demo bilgileri: demo@globalit.dev / demo1234"
+  },
+  "RegisterPage": {
+    "title": "Hesabını oluştur",
+    "subtitle": "Başvurunu bir dakikadan kısa sürede başlat.",
+    "nameLabel": "Ad Soyad",
+    "emailLabel": "E-posta",
+    "passwordLabel": "Şifre",
+    "confirmPasswordLabel": "Şifreyi Onayla",
+    "termsLabel": "Kullanım Koşulları ve Gizlilik Politikası'nı kabul ediyorum",
+    "submit": "Hesap Oluştur",
+    "submitting": "Hesap oluşturuluyor...",
+    "success": "Hesap oluşturuldu! Yönlendiriliyorsun...",
+    "hasAccount": "Zaten hesabın var mı?",
+    "loginLink": "Giriş yap",
+    "strengthWeak": "Zayıf",
+    "strengthMedium": "Orta",
+    "strengthStrong": "Güçlü",
+    "errors": {
+      "nameRequired": "Lütfen adını gir.",
+      "emailRequired": "Lütfen e-posta adresini gir.",
+      "emailInvalid": "Lütfen geçerli bir e-posta adresi gir.",
+      "passwordTooShort": "Şifre en az 8 karakter olmalı.",
+      "passwordMismatch": "Şifreler eşleşmiyor.",
+      "termsRequired": "Devam etmek için koşulları kabul etmelisin."
+    }
+  },
+  "NotFoundPage": {
+    "title": "404",
+    "heading": "Sayfa bulunamadı",
+    "message": "Aradığın sayfa mevcut değil ya da taşınmış olabilir.",
+    "backHome": "Ana Sayfaya Dön",
+    "popularPages": "Popüler Sayfalar",
+    "linkBootcamps": "Bootcamp'lere Göz At",
+    "linkAbout": "Hakkımızda",
+    "linkContact": "İletişim"
+  },
   "HomePage": {
     "hero": {
       "badge": "Yapay Zeka Destekli Öğrenme Platformu",

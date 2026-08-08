@@ -3,7 +3,7 @@
 import { X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useEffect, useRef } from 'react';
-import { Button } from '@/components/ui';
+import { buttonStyles } from '@/components/ui';
 import { Link } from '@/i18n/navigation';
 
 export interface MobileMenuProps {
@@ -98,9 +98,13 @@ export function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) {
       </nav>
 
       <div className="border-border border-t px-6 py-4">
-        <Button className="w-full" onClick={onClose}>
+        <Link
+          href="/auth/register"
+          onClick={onClose}
+          className={buttonStyles('primary', 'md') + ' w-full'}
+        >
           {t('cta')}
-        </Button>
+        </Link>
       </div>
     </div>
   );

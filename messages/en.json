@@ -104,6 +104,123 @@
     "emptyDescription": "Try adjusting your search or clearing the filters below.",
     "clearFilters": "Clear Filters"
   },
+  "AboutPage": {
+    "title": "About Global IT",
+    "subtitle": "We help career switchers become hired engineers, with real mentorship and real outcomes.",
+    "missionTitle": "Our Mission",
+    "missionText": "We believe a career in tech shouldn't require a four-year degree or years of self-teaching. Global IT was founded to give motivated people a structured, mentor-led path into real engineering jobs — with the same rigor as a top-tier bootcamp, delivered by people who still build software for a living.",
+    "statsGraduates": "Graduates",
+    "statsHiringRate": "Hiring Rate",
+    "statsPartners": "Hiring Partners",
+    "statsFounded": "Founded",
+    "teamTitle": "Meet the Instructors",
+    "teamSubtitle": "The people who'll actually be teaching you.",
+    "timelineTitle": "Our Journey",
+    "timeline": [
+      {
+        "year": "2019",
+        "title": "Founded in Amsterdam",
+        "description": "Started with a single 12-week web development cohort of 18 students."
+      },
+      {
+        "year": "2021",
+        "title": "Expanded to Data & Cloud",
+        "description": "Launched Data Engineering and Cloud & DevOps tracks after strong employer demand."
+      },
+      {
+        "year": "2023",
+        "title": "2,000th Graduate",
+        "description": "Crossed 2,000 graduates with an 85%+ employment rate within 6 months."
+      },
+      {
+        "year": "2025",
+        "title": "Hybrid & AI Tracks",
+        "description": "Introduced hybrid cohorts and Applied AI & LLM programs."
+      }
+    ],
+    "partnersTitle": "Hiring Partners"
+  },
+  "ContactPage": {
+    "title": "Get in Touch",
+    "subtitle": "Questions about a program? Our team usually replies within one business day.",
+    "nameLabel": "Full Name",
+    "emailLabel": "Email",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "successMessage": "Thanks for reaching out! We'll get back to you within one business day.",
+    "errors": {
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email address.",
+      "subjectRequired": "Please enter a subject.",
+      "messageRequired": "Please enter a message.",
+      "messageTooShort": "Your message should be at least 20 characters."
+    },
+    "altTitle": "Other Ways to Reach Us",
+    "emailUsLabel": "Email us",
+    "callUsLabel": "Call us",
+    "visitUsLabel": "Visit us",
+    "address": "Herengracht 182, 1016 BR Amsterdam, Netherlands",
+    "mapCaption": "Our Amsterdam office"
+  },
+  "LoginPage": {
+    "title": "Welcome back",
+    "subtitle": "Log in to continue your program.",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "submit": "Log In",
+    "submitting": "Logging in...",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "registerLink": "Sign up",
+    "invalidCredentials": "Incorrect email or password. Try demo@globalit.dev / demo1234.",
+    "success": "Login successful. Redirecting...",
+    "errors": {
+      "emailRequired": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email address.",
+      "passwordRequired": "Please enter your password."
+    },
+    "demoHint": "Demo credentials: demo@globalit.dev / demo1234"
+  },
+  "RegisterPage": {
+    "title": "Create your account",
+    "subtitle": "Start your application in less than a minute.",
+    "nameLabel": "Full Name",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "confirmPasswordLabel": "Confirm Password",
+    "termsLabel": "I agree to the Terms of Service and Privacy Policy",
+    "submit": "Create Account",
+    "submitting": "Creating account...",
+    "success": "Account created! Redirecting...",
+    "hasAccount": "Already have an account?",
+    "loginLink": "Log in",
+    "strengthWeak": "Weak",
+    "strengthMedium": "Medium",
+    "strengthStrong": "Strong",
+    "errors": {
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email address.",
+      "passwordTooShort": "Password must be at least 8 characters.",
+      "passwordMismatch": "Passwords don't match.",
+      "termsRequired": "You must accept the terms to continue."
+    }
+  },
+  "NotFoundPage": {
+    "title": "404",
+    "heading": "Page not found",
+    "message": "The page you're looking for doesn't exist or may have been moved.",
+    "backHome": "Back to Home",
+    "popularPages": "Popular Pages",
+    "linkBootcamps": "Browse Bootcamps",
+    "linkAbout": "About Us",
+    "linkContact": "Contact"
+  },
   "HomePage": {
     "hero": {
       "badge": "AI-Powered Learning Platform",
