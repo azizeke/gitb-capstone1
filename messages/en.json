@@ -1,4 +1,23 @@
 {
+  "ErrorBoundary": {
+    "title": "Something went wrong",
+    "message": "An unexpected error occurred. You can try again or head back to the homepage.",
+    "retry": "Try Again",
+    "backHome": "Back to Home"
+  },
+  "CookieConsent": {
+    "message": "We use cookies to improve your experience and understand how you use our site. You can accept all cookies, reject non-essential ones, or manage your preferences.",
+    "acceptAll": "Accept All",
+    "rejectAll": "Reject All",
+    "managePreferences": "Manage Preferences",
+    "preferencesTitle": "Cookie Preferences",
+    "necessaryLabel": "Necessary",
+    "necessaryDescription": "Required for the site to function. Always on.",
+    "analyticsLabel": "Analytics",
+    "analyticsDescription": "Helps us understand how visitors use the site.",
+    "savePreferences": "Save Preferences",
+    "back": "Back"
+  },
   "Common": {
     "levels": {
       "beginner": "Beginner",

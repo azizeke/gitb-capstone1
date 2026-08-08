@@ -3,6 +3,16 @@ import { inter, spaceGrotesk } from '@/lib/fonts';
 import { themeInitScript } from '@/lib/theme-script';
 import '../globals.css';
 
+/**
+ * /styleguide, [locale] segmentinin DIŞINDA kendi root layout'una sahip
+ * (bkz. Next.js "multiple root layouts" deseni). Bu bilinçli bir tercih:
+ * styleguide, üründe listelenen bir sayfa değil, sadece geliştiriciler
+ * için bir tasarım referansı olduğu için çevrilmiyor ve Header/Footer
+ * içermiyor.
+ *
+ * Tema init script'i burada da çalışıyor ki üründe (örn. /en sayfasında)
+ * seçilen tema, /styleguide'a geçildiğinde de korunsun.
+ */
 export const metadata: Metadata = {
   title: 'Styleguide — Global IT Bootcamp',
   robots: 'noindex, nofollow',

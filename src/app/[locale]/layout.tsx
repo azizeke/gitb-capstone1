@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
+import { CookieConsent } from '@/components/layout/CookieConsent';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
+import { PageTransition } from '@/components/layout/PageTransition';
 import { routing } from '@/i18n/routing';
 import { inter, spaceGrotesk } from '@/lib/fonts';
 import { themeInitScript } from '@/lib/theme-script';
@@ -26,6 +28,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
+  // Bilinmeyen bir locale segmenti gelirse (örn. /fr) 404 göster.
   const isValidLocale = routing.locales.includes(locale as (typeof routing.locales)[number]);
   if (!isValidLocale) {
     notFound();
@@ -38,12 +41,14 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="bg-background text-text flex min-h-full flex-col">
-
         <script suppressHydrationWarning dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <NextIntlClientProvider locale={locale}>
           <Header />
-          <div className="flex-1">{children}</div>
+          <div className="flex-1">
+            <PageTransition>{children}</PageTransition>
+          </div>
           <Footer />
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>

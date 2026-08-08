@@ -111,3 +111,43 @@ h5,
 h6 {
   font-family: var(--font-heading), Arial, Helvetica, sans-serif;
 }
+
+/*
+ * Sayfa geçişi ve scroll-reveal animasyonları.
+ *
+ * `prefers-reduced-motion: no-preference` sarmalayıcısı KASITLI: kullanıcı
+ * sistemde "hareketi azalt" tercihini açtıysa bu kural hiç eşleşmez ve
+ * elementler animasyon olmadan doğrudan son haliyle görünür (F-01/F-02
+ * kabul kriteri: "prefers-reduced-motion destekli").
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .page-transition {
+    animation: page-fade-in 250ms ease-out;
+  }
+
+  .scroll-reveal {
+    animation: scroll-fade-up 400ms ease-out both;
+  }
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

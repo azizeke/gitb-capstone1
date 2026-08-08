@@ -1,4 +1,23 @@
 {
+  "ErrorBoundary": {
+    "title": "Bir şeyler ters gitti",
+    "message": "Beklenmeyen bir hata oluştu. Tekrar deneyebilir ya da ana sayfaya dönebilirsin.",
+    "retry": "Tekrar Dene",
+    "backHome": "Ana Sayfaya Dön"
+  },
+  "CookieConsent": {
+    "message": "Deneyimini iyileştirmek ve sitemizi nasıl kullandığını anlamak için çerezler kullanıyoruz. Tüm çerezleri kabul edebilir, gerekli olmayanları reddedebilir veya tercihlerini yönetebilirsin.",
+    "acceptAll": "Tümünü Kabul Et",
+    "rejectAll": "Tümünü Reddet",
+    "managePreferences": "Tercihleri Yönet",
+    "preferencesTitle": "Çerez Tercihleri",
+    "necessaryLabel": "Gerekli",
+    "necessaryDescription": "Sitenin çalışması için zorunlu. Her zaman açık.",
+    "analyticsLabel": "Analitik",
+    "analyticsDescription": "Ziyaretçilerin siteyi nasıl kullandığını anlamamıza yardımcı olur.",
+    "savePreferences": "Tercihleri Kaydet",
+    "back": "Geri"
+  },
   "Common": {
     "levels": {
       "beginner": "Başlangıç",
