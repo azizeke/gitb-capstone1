@@ -30,7 +30,8 @@
       "onsite": "Yüz Yüze"
     },
     "weeks": "{count} hafta",
-    "viewProgram": "Programı Gör"
+    "viewProgram": "Programı Gör",
+    "featuredBadge": "Öne Çıkan"
   },
   "Header": {
     "nav": {

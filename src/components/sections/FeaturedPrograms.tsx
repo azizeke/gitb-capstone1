@@ -23,13 +23,14 @@ export function FeaturedPrograms() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {featured.map((bootcamp) => {
+          {featured.map((bootcamp, index) => {
             const category = categories.find((c) => c.slug === bootcamp.categorySlug);
             return (
               <BootcampCard
                 key={bootcamp.slug}
                 bootcamp={bootcamp}
                 categoryName={category?.name ?? bootcamp.categorySlug}
+                priority={index === 0}
               />
             );
           })}

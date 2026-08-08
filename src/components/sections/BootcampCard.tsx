@@ -8,15 +8,20 @@ import type { Bootcamp } from '@/types';
 export interface BootcampCardProps {
   bootcamp: Bootcamp;
   categoryName: string;
+  /**
+   * Sadece bir grid'deki İLK kart için true verilmeli — o görsel genelde
+   * "Largest Contentful Paint" adayıdır ve erken yüklenmesi Next.js
+   * tarafından öneriliyor. Tüm kartlara true vermek performansı düşürür
+   * (tarayıcı hepsini aynı anda öncelikli indirmeye çalışır).
+   */
+  priority?: boolean;
 }
 
 /**
  * Landing (öne çıkan programlar) ve Bootcamps liste sayfasında (EPIC D)
- * paylaşılan kart komponenti. Detay sayfası (/bootcamps/[slug]) henüz
- * EPIC D'de kurulacak; şimdilik link hedefi hazır ama sayfa yok, bu
- * normal ve beklenen bir ara durumdur.
+ * paylaşılan kart komponenti.
  */
-export function BootcampCard({ bootcamp, categoryName }: BootcampCardProps) {
+export function BootcampCard({ bootcamp, categoryName, priority = false }: BootcampCardProps) {
   const t = useTranslations('Common');
 
   return (
@@ -26,12 +31,13 @@ export function BootcampCard({ bootcamp, categoryName }: BootcampCardProps) {
           src={bootcamp.heroImage}
           alt={bootcamp.title}
           fill
+          priority={priority}
           className="object-cover"
           sizes="(min-width: 1024px) 320px, (min-width: 640px) 45vw, 90vw"
         />
         {bootcamp.featured && (
           <Badge variant="warning" className="absolute top-3 left-3">
-            Featured
+            {t('featuredBadge')}
           </Badge>
         )}
       </div>

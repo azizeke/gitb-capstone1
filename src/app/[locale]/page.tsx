@@ -12,7 +12,7 @@ import { Testimonials } from '@/components/sections/Testimonials';
 
 export default function HomePage() {
   return (
-    <>
+    <main>
       <Hero />
       <StatsCounter />
       <FeaturedPrograms />
@@ -24,6 +24,6 @@ export default function HomePage() {
       <Pricing />
       <Newsletter />
       <ClosingCta />
-    </>
+    </main>
   );
 }

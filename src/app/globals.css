@@ -17,7 +17,13 @@
   --color-primary: #4f46e5;
   --color-primary-foreground: #ffffff;
   --color-secondary: #0ea5e9;
-  --color-secondary-foreground: #ffffff;
+  /*
+   * Beyaz metin (#ffffff) secondary üzerinde ~2.77:1 kontrast veriyordu
+   * (WCAG AA'nın istediği 4.5:1'in altında). Koyu metne geçince ~6.4:1
+   * oluyor. Bkz. proje şartnamesi "Metin/arka plan kontrast oranı en az
+   * 4.5:1 olmalı".
+   */
+  --color-secondary-foreground: #0f172a;
   --color-accent: #f59e0b;
   --color-accent-foreground: #1e293b;
 

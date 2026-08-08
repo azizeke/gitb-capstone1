@@ -30,7 +30,8 @@
       "onsite": "Onsite"
     },
     "weeks": "{count} weeks",
-    "viewProgram": "View Program"
+    "viewProgram": "View Program",
+    "featuredBadge": "Featured"
   },
   "Header": {
     "nav": {
