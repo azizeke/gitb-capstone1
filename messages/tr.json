@@ -50,6 +50,28 @@
     "switchToLight": "Açık temaya geç",
     "switchToDark": "Koyu temaya geç"
   },
+  "SchedulePage": {
+    "title": "Kohort Takvimi",
+    "subtitle": "Sana uygun bir sonraki başlangıç tarihini bul.",
+    "nextCohortTitle": "Sıradaki Kohort Başlıyor",
+    "days": "Gün",
+    "hours": "Saat",
+    "minutes": "Dakika",
+    "seconds": "Saniye",
+    "filterByMonth": "Aya göre filtrele",
+    "allMonths": "Tüm Aylar",
+    "program": "Program",
+    "startDate": "Başlangıç",
+    "endDate": "Bitiş",
+    "seats": "Kontenjan",
+    "format": "Format",
+    "status": "Durum",
+    "statusUpcoming": "Yaklaşıyor",
+    "statusStarted": "Başladı",
+    "statusFull": "Dolu",
+    "seatsLeft": "{count} kaldı",
+    "noResults": "Bu ay için planlanmış kohort yok."
+  },
   "BootcampDetailPage": {
     "curriculum": "Müfredat",
     "hours": "saat",

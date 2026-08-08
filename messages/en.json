@@ -50,6 +50,28 @@
     "switchToLight": "Switch to light theme",
     "switchToDark": "Switch to dark theme"
   },
+  "SchedulePage": {
+    "title": "Cohort Schedule",
+    "subtitle": "Find the next start date that works for you.",
+    "nextCohortTitle": "Next Cohort Starts In",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "filterByMonth": "Filter by month",
+    "allMonths": "All Months",
+    "program": "Program",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "seats": "Seats",
+    "format": "Format",
+    "status": "Status",
+    "statusUpcoming": "Upcoming",
+    "statusStarted": "Already Started",
+    "statusFull": "Full",
+    "seatsLeft": "{count} left",
+    "noResults": "No cohorts scheduled for this month."
+  },
   "BootcampDetailPage": {
     "curriculum": "Curriculum",
     "hours": "hours",
