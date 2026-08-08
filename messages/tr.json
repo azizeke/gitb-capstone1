@@ -38,7 +38,8 @@
       "bootcamps": "Bootcamp'ler",
       "schedule": "Takvim",
       "about": "Hakkımızda",
-      "contact": "İletişim"
+      "contact": "İletişim",
+      "dashboard": "Panel"
     },
     "cta": "Kayıt Ol",
     "openMenu": "Menüyü aç",
@@ -69,6 +70,28 @@
   "ThemeToggle": {
     "switchToLight": "Açık temaya geç",
     "switchToDark": "Koyu temaya geç"
+  },
+  "DashboardPage": {
+    "title": "Panel",
+    "welcome": "Tekrar hoş geldin, {name}",
+    "subtitle": "Kaldığın yer burası.",
+    "mockNotice": "Bu statik bir önizlemedir — gerçek hesap verisi henüz bağlanmadı.",
+    "currentProgram": "Mevcut Program",
+    "progress": "İlerleme",
+    "nextCohort": "Sıradaki Oturum",
+    "curriculumTitle": "Müfredat İlerlemesi",
+    "statusCompleted": "Tamamlandı",
+    "statusInProgress": "Devam Ediyor",
+    "statusUpcoming": "Yaklaşıyor",
+    "achievementsTitle": "Başarılar",
+    "achievementEnrolled": "Programa kaydoldu",
+    "achievementFirstProject": "İlk projeyi tamamladı",
+    "achievementHalfway": "Yarı yola ulaştı",
+    "achievementTeamProject": "Bir takım projesi teslim etti",
+    "quickLinksTitle": "Hızlı Bağlantılar",
+    "linkCurriculum": "Tüm Müfredatı Gör",
+    "linkSchedule": "Takvimi Gör",
+    "linkSupport": "Destekle İletişime Geç"
   },
   "SchedulePage": {
     "title": "Kohort Takvimi",

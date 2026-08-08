@@ -1,0 +1,378 @@
+{
+  "ErrorBoundary": {
+    "title": "Er is iets misgegaan",
+    "message": "Er is een onverwachte fout opgetreden. Je kunt het opnieuw proberen of terugkeren naar de homepage.",
+    "retry": "Opnieuw Proberen",
+    "backHome": "Terug naar Home"
+  },
+  "CookieConsent": {
+    "message": "We gebruiken cookies om je ervaring te verbeteren en te begrijpen hoe je onze site gebruikt. Je kunt alle cookies accepteren, niet-noodzakelijke cookies weigeren of je voorkeuren beheren.",
+    "acceptAll": "Alles Accepteren",
+    "rejectAll": "Alles Weigeren",
+    "managePreferences": "Voorkeuren Beheren",
+    "preferencesTitle": "Cookievoorkeuren",
+    "necessaryLabel": "Noodzakelijk",
+    "necessaryDescription": "Vereist voor de werking van de site. Altijd actief.",
+    "analyticsLabel": "Analytics",
+    "analyticsDescription": "Helpt ons begrijpen hoe bezoekers de site gebruiken.",
+    "savePreferences": "Voorkeuren Opslaan",
+    "back": "Terug"
+  },
+  "Common": {
+    "levels": {
+      "beginner": "Beginner",
+      "intermediate": "Gemiddeld",
+      "advanced": "Gevorderd"
+    },
+    "formats": {
+      "online": "Online",
+      "hybrid": "Hybride",
+      "onsite": "Op locatie"
+    },
+    "weeks": "{count} weken",
+    "viewProgram": "Bekijk Programma",
+    "featuredBadge": "Uitgelicht"
+  },
+  "Header": {
+    "nav": {
+      "bootcamps": "Bootcamps",
+      "schedule": "Rooster",
+      "about": "Over Ons",
+      "contact": "Contact",
+      "dashboard": "Dashboard"
+    },
+    "cta": "Aanmelden",
+    "openMenu": "Menu openen",
+    "logo": "Global IT"
+  },
+  "MobileMenu": {
+    "closeMenu": "Menu sluiten",
+    "cta": "Aanmelden"
+  },
+  "Footer": {
+    "tagline": "Bootcampprogramma's die je carrière veranderen.",
+    "columns": {
+      "product": "Product",
+      "company": "Bedrijf",
+      "legal": "Juridisch"
+    },
+    "links": {
+      "bootcamps": "Bootcamps",
+      "schedule": "Rooster",
+      "pricing": "Prijzen",
+      "about": "Over Ons",
+      "contact": "Contact",
+      "privacy": "Privacybeleid",
+      "terms": "Gebruiksvoorwaarden"
+    },
+    "copyright": "Global IT Bootcamp. Alle rechten voorbehouden."
+  },
+  "ThemeToggle": {
+    "switchToLight": "Overschakelen naar licht thema",
+    "switchToDark": "Overschakelen naar donker thema"
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "welcome": "Welkom terug, {name}",
+    "subtitle": "Hier ben je gebleven.",
+    "mockNotice": "Dit is een statische preview — er is nog geen echte accountdata gekoppeld.",
+    "currentProgram": "Huidig Programma",
+    "progress": "Voortgang",
+    "nextCohort": "Volgende Sessie",
+    "curriculumTitle": "Voortgang Curriculum",
+    "statusCompleted": "Voltooid",
+    "statusInProgress": "Bezig",
+    "statusUpcoming": "Aankomend",
+    "achievementsTitle": "Prestaties",
+    "achievementEnrolled": "Ingeschreven voor programma",
+    "achievementFirstProject": "Eerste project voltooid",
+    "achievementHalfway": "Halverwege gekomen",
+    "achievementTeamProject": "Teamproject opgeleverd",
+    "quickLinksTitle": "Snelle Links",
+    "linkCurriculum": "Volledig Curriculum Bekijken",
+    "linkSchedule": "Rooster Bekijken",
+    "linkSupport": "Contact met Support"
+  },
+  "SchedulePage": {
+    "title": "Cohortrooster",
+    "subtitle": "Vind de volgende startdatum die bij je past.",
+    "nextCohortTitle": "Volgende Cohort Start Over",
+    "days": "Dagen",
+    "hours": "Uren",
+    "minutes": "Minuten",
+    "seconds": "Seconden",
+    "filterByMonth": "Filter op maand",
+    "allMonths": "Alle Maanden",
+    "program": "Programma",
+    "startDate": "Startdatum",
+    "endDate": "Einddatum",
+    "seats": "Plekken",
+    "format": "Format",
+    "status": "Status",
+    "statusUpcoming": "Aankomend",
+    "statusStarted": "Al Gestart",
+    "statusFull": "Vol",
+    "seatsLeft": "{count} plekken over",
+    "noResults": "Geen cohorten gepland voor deze maand."
+  },
+  "BootcampDetailPage": {
+    "curriculum": "Curriculum",
+    "hours": "uur",
+    "instructor": "Jouw Docent",
+    "reviews": "Beoordelingen van Studenten",
+    "noReviews": "Nog geen beoordelingen voor dit programma.",
+    "relatedPrograms": "Vergelijkbare Programma's",
+    "enrollCta": "Reserveer Je Plek",
+    "nextCohort": "Volgende Cohort",
+    "seatsLeft": "{count} plekken over",
+    "cohortFull": "Deze cohort is vol",
+    "alreadyStarted": "Al gestart",
+    "languages": "Talen",
+    "students": "studenten",
+    "backToBootcamps": "Terug naar alle bootcamps"
+  },
+  "BootcampsPage": {
+    "title": "Ontdek Bootcamps",
+    "subtitle": "Vind het programma dat past bij waar je je carrière naartoe wilt brengen.",
+    "searchPlaceholder": "Zoek bootcamps...",
+    "categoryLabel": "Categorie",
+    "levelLabel": "Niveau",
+    "allLevels": "Alle Niveaus",
+    "sortLabel": "Sorteer op",
+    "sortPopular": "Meest Populair",
+    "sortPriceAsc": "Prijs: Laag naar Hoog",
+    "sortDuration": "Duur: Kortste Eerst",
+    "resultsCount": "{count, plural, one {# programma gevonden} other {# programma's gevonden}}",
+    "emptyTitle": "Geen bootcamps komen overeen met je filters",
+    "emptyDescription": "Probeer je zoekopdracht aan te passen of de onderstaande filters te wissen.",
+    "clearFilters": "Filters Wissen"
+  },
+  "AboutPage": {
+    "title": "Over Global IT",
+    "subtitle": "We helpen carrièreswitchers aangenomen engineers te worden, met echte mentorschap en echte resultaten.",
+    "missionTitle": "Onze Missie",
+    "missionText": "Wij geloven dat een carrière in tech geen vierjarige opleiding of jaren zelfstudie zou moeten vereisen. Global IT is opgericht om gemotiveerde mensen een gestructureerd, door mentoren begeleid pad naar echte engineeringbanen te bieden — met dezelfde grondigheid als een topbootcamp, gegeven door mensen die nog steeds dagelijks software bouwen.",
+    "statsGraduates": "Afgestudeerden",
+    "statsHiringRate": "Aannamepercentage",
+    "statsPartners": "Wervingspartners",
+    "statsFounded": "Opgericht",
+    "teamTitle": "Ontmoet de Docenten",
+    "teamSubtitle": "De mensen die jou daadwerkelijk gaan lesgeven.",
+    "timelineTitle": "Onze Reis",
+    "timeline": [
+      {
+        "year": "2019",
+        "title": "Opgericht in Amsterdam",
+        "description": "Begonnen met één 12-weekse webontwikkelingscohort van 18 studenten."
+      },
+      {
+        "year": "2021",
+        "title": "Uitgebreid naar Data & Cloud",
+        "description": "Data Engineering en Cloud & DevOps-trajecten gelanceerd na sterke vraag van werkgevers."
+      },
+      {
+        "year": "2023",
+        "title": "2.000e Afgestudeerde",
+        "description": "2.000 afgestudeerden bereikt met een werkgelegenheidspercentage van 85%+ binnen 6 maanden."
+      },
+      {
+        "year": "2025",
+        "title": "Hybride & AI-trajecten",
+        "description": "Hybride cohorten en Applied AI & LLM-programma's geïntroduceerd."
+      }
+    ],
+    "partnersTitle": "Wervingspartners"
+  },
+  "ContactPage": {
+    "title": "Neem Contact Op",
+    "subtitle": "Vragen over een programma? Ons team reageert meestal binnen één werkdag.",
+    "nameLabel": "Volledige Naam",
+    "emailLabel": "E-mail",
+    "subjectLabel": "Onderwerp",
+    "messageLabel": "Bericht",
+    "submit": "Bericht Versturen",
+    "submitting": "Versturen...",
+    "successMessage": "Bedankt voor je bericht! We nemen binnen één werkdag contact met je op.",
+    "errors": {
+      "nameRequired": "Vul je naam in.",
+      "emailRequired": "Vul je e-mailadres in.",
+      "emailInvalid": "Vul een geldig e-mailadres in.",
+      "subjectRequired": "Vul een onderwerp in.",
+      "messageRequired": "Vul een bericht in.",
+      "messageTooShort": "Je bericht moet minimaal 20 tekens bevatten."
+    },
+    "altTitle": "Andere Manieren om Ons te Bereiken",
+    "emailUsLabel": "E-mail ons",
+    "callUsLabel": "Bel ons",
+    "visitUsLabel": "Bezoek ons",
+    "address": "Herengracht 182, 1016 BR Amsterdam, Nederland",
+    "mapCaption": "Ons kantoor in Amsterdam"
+  },
+  "LoginPage": {
+    "title": "Welkom terug",
+    "subtitle": "Log in om verder te gaan met je programma.",
+    "emailLabel": "E-mail",
+    "passwordLabel": "Wachtwoord",
+    "showPassword": "Wachtwoord tonen",
+    "hidePassword": "Wachtwoord verbergen",
+    "submit": "Inloggen",
+    "submitting": "Bezig met inloggen...",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "noAccount": "Nog geen account?",
+    "registerLink": "Aanmelden",
+    "invalidCredentials": "Onjuist e-mailadres of wachtwoord. Probeer demo@globalit.dev / demo1234.",
+    "success": "Inloggen gelukt. Je wordt doorgestuurd...",
+    "errors": {
+      "emailRequired": "Vul je e-mailadres in.",
+      "emailInvalid": "Vul een geldig e-mailadres in.",
+      "passwordRequired": "Vul je wachtwoord in."
+    },
+    "demoHint": "Demogegevens: demo@globalit.dev / demo1234"
+  },
+  "RegisterPage": {
+    "title": "Maak je account aan",
+    "subtitle": "Start je aanmelding in minder dan een minuut.",
+    "nameLabel": "Volledige Naam",
+    "emailLabel": "E-mail",
+    "passwordLabel": "Wachtwoord",
+    "confirmPasswordLabel": "Bevestig Wachtwoord",
+    "termsLabel": "Ik ga akkoord met de Gebruiksvoorwaarden en het Privacybeleid",
+    "submit": "Account Aanmaken",
+    "submitting": "Account wordt aangemaakt...",
+    "success": "Account aangemaakt! Je wordt doorgestuurd...",
+    "hasAccount": "Heb je al een account?",
+    "loginLink": "Inloggen",
+    "strengthWeak": "Zwak",
+    "strengthMedium": "Gemiddeld",
+    "strengthStrong": "Sterk",
+    "errors": {
+      "nameRequired": "Vul je naam in.",
+      "emailRequired": "Vul je e-mailadres in.",
+      "emailInvalid": "Vul een geldig e-mailadres in.",
+      "passwordTooShort": "Wachtwoord moet minimaal 8 tekens bevatten.",
+      "passwordMismatch": "Wachtwoorden komen niet overeen.",
+      "termsRequired": "Je moet akkoord gaan met de voorwaarden om verder te gaan."
+    }
+  },
+  "NotFoundPage": {
+    "title": "404",
+    "heading": "Pagina niet gevonden",
+    "message": "De pagina die je zoekt bestaat niet of is mogelijk verplaatst.",
+    "backHome": "Terug naar Home",
+    "popularPages": "Populaire Pagina's",
+    "linkBootcamps": "Bekijk Bootcamps",
+    "linkAbout": "Over Ons",
+    "linkContact": "Contact"
+  },
+  "HomePage": {
+    "hero": {
+      "badge": "AI-gedreven Leerplatform",
+      "title": "Start je techcarrière in weken, niet jaren",
+      "subtitle": "Sluit je aan bij een bootcamp gebouwd door echte engineers, met echte projecten en echte aannameresultaten.",
+      "ctaPrimary": "Gratis Beginnen met Leren",
+      "ctaSecondary": "Bekijk Programma's"
+    },
+    "stats": {
+      "graduates": "Afgestudeerden",
+      "employmentRate": "Werkgelegenheidspercentage",
+      "partners": "Wervingspartners"
+    },
+    "counters": {
+      "graduates": "Afgestudeerden",
+      "employmentRate": "Werkgelegenheidspercentage",
+      "partners": "Bedrijfspartners",
+      "countries": "Landen"
+    },
+    "featuredPrograms": {
+      "title": "Uitgelichte Programma's",
+      "subtitle": "Zorgvuldig geselecteerde programma's met de sterkste aannameresultaten.",
+      "viewAll": "Bekijk Alles"
+    },
+    "categories": {
+      "title": "Verken per Categorie",
+      "subtitle": "Vind het traject dat past bij waar je je carrière naartoe wilt brengen.",
+      "coursesLabel": "cursussen"
+    },
+    "features": {
+      "title": "Waarom Global IT",
+      "subtitle": "Alles wat je nodig hebt om van leren naar aangenomen worden te gaan.",
+      "items": [
+        {
+          "title": "Praktijkprojecten",
+          "description": "Elke module eindigt met een project dat je kunt laten zien in een sollicitatiegesprek, niet met een toets."
+        },
+        {
+          "title": "Live mentorschap",
+          "description": "Wekelijkse 1-op-1-sessies met engineers die momenteel actief zijn in het vakgebied dat jij instapt."
+        },
+        {
+          "title": "Kleine cohorten",
+          "description": "Klassen blijven klein zodat docenten je naam en je doelen echt kennen."
+        },
+        {
+          "title": "Carrièrebegeleiding",
+          "description": "CV-beoordelingen, proefsollicitaties en directe introducties bij wervingspartners."
+        },
+        {
+          "title": "Flexibele formats",
+          "description": "Online, hybride of op locatie — kies wat past bij je schema en leerstijl."
+        },
+        {
+          "title": "Levenslange toegang",
+          "description": "Behoud toegang tot cursusmateriaal en de alumnigemeenschap na afstuderen."
+        }
+      ]
+    },
+    "howItWorks": {
+      "title": "Hoe Het Werkt",
+      "subtitle": "Van aanmelding tot je eerste werkdag.",
+      "steps": [
+        {
+          "title": "Solliciteer",
+          "description": "Vertel ons over je doelen in een korte aanmelding — geen codeertest vereist."
+        },
+        {
+          "title": "Leer",
+          "description": "Volg een gestructureerd curriculum met live lessen, projecten en mentorschap."
+        },
+        {
+          "title": "Bouw",
+          "description": "Lever een portfolio van echte projecten op, waaronder één in teamverband gebouwd."
+        },
+        {
+          "title": "Word Aangenomen",
+          "description": "Werk samen met ons carrièreteam aan je cv, sollicitatiegesprekken en introducties bij werkgevers."
+        }
+      ]
+    },
+    "instructors": {
+      "title": "Leer van Experts uit de Praktijk",
+      "subtitle": "Docenten die productiesystemen bouwen, niet alleen theorie doceren."
+    },
+    "testimonials": {
+      "title": "Wat Onze Afgestudeerden Zeggen",
+      "subtitle": "Echte resultaten, in hun eigen woorden."
+    },
+    "pricing": {
+      "title": "Eenvoudige, Transparante Prijzen",
+      "subtitle": "Kies het format dat het beste bij jouw manier van leren past.",
+      "perMonth": "/maand",
+      "custom": "Op Maat",
+      "contactSales": "Neem Contact op met Sales",
+      "getStarted": "Aan de Slag",
+      "mostPopular": "Meest Populair"
+    },
+    "newsletter": {
+      "title": "Blijf op de hoogte",
+      "subtitle": "Ontvang bootcampupdates, carrièretips en vroege toegang tot nieuwe cohorten.",
+      "placeholder": "Vul je e-mailadres in",
+      "submit": "Abonneren",
+      "success": "Bedankt! Check je inbox om te bevestigen."
+    },
+    "closingCta": {
+      "title": "Klaar om je carrière te veranderen?",
+      "subtitle": "Aanmeldingen voor de volgende cohort sluiten binnenkort.",
+      "cta": "Nu Aanmelden"
+    }
+  }
+}

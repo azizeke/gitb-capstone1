@@ -1,8 +1,23 @@
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
-import { Badge, Card } from '@/components/ui';
+import { Badge } from '@/components/ui';
 import { instructors } from '@/data/instructors';
 import { testimonials } from '@/data/testimonials';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'AboutPage' });
+
+  return {
+    title: t('title'),
+    description: t('subtitle'),
+  };
+}
 
 interface TimelineItem {
   year: string;
@@ -102,11 +117,21 @@ export default async function AboutPage() {
       {/* Partnerler */}
       <section className="mx-auto max-w-4xl px-6 py-16 text-center">
         <h2 className="font-heading mb-8 text-2xl font-bold sm:text-3xl">{t('partnersTitle')}</h2>
-        <div className="flex flex-wrap justify-center gap-3">
+        {/*
+         * Gerçek şirket isimleri (mezunların çalıştığı şirketler) metin
+         * olarak gösteriliyor; gerçek marka logoları (görseller) telif/marka
+         * hakkı riski taşıdığı için kullanılmıyor. "Wordmark" tipografisi
+         * (kalın, geniş harf aralığı, başlık fontu) bir logo şeridi hissi
+         * vermek için tercih edildi.
+         */}
+        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-8">
           {partnerCompanies.map((company) => (
-            <Card key={company} className="px-5 py-3">
-              <span className="text-sm font-medium">{company}</span>
-            </Card>
+            <span
+              key={company}
+              className="font-heading text-text/70 hover:text-text text-2xl font-extrabold tracking-tight transition-colors sm:text-3xl"
+            >
+              {company}
+            </span>
           ))}
         </div>
       </section>

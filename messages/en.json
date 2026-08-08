@@ -38,7 +38,8 @@
       "bootcamps": "Bootcamps",
       "schedule": "Schedule",
       "about": "About",
-      "contact": "Contact"
+      "contact": "Contact",
+      "dashboard": "Dashboard"
     },
     "cta": "Sign Up",
     "openMenu": "Open menu",
@@ -69,6 +70,28 @@
   "ThemeToggle": {
     "switchToLight": "Switch to light theme",
     "switchToDark": "Switch to dark theme"
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "welcome": "Welcome back, {name}",
+    "subtitle": "Here's where you left off.",
+    "mockNotice": "This is a static preview — real account data isn't connected yet.",
+    "currentProgram": "Current Program",
+    "progress": "Progress",
+    "nextCohort": "Next Session",
+    "curriculumTitle": "Curriculum Progress",
+    "statusCompleted": "Completed",
+    "statusInProgress": "In Progress",
+    "statusUpcoming": "Upcoming",
+    "achievementsTitle": "Achievements",
+    "achievementEnrolled": "Enrolled in program",
+    "achievementFirstProject": "Completed first project",
+    "achievementHalfway": "Reached the halfway point",
+    "achievementTeamProject": "Shipped a team project",
+    "quickLinksTitle": "Quick Links",
+    "linkCurriculum": "View Full Curriculum",
+    "linkSchedule": "View Schedule",
+    "linkSupport": "Contact Support"
   },
   "SchedulePage": {
     "title": "Cohort Schedule",

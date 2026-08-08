@@ -7,7 +7,7 @@ import { defineRouting } from 'next-intl/routing';
  * dilin paylaşılabilir linklerde de korunmasını sağlıyor.
  */
 export const routing = defineRouting({
-  locales: ['en', 'tr'],
+  locales: ['en', 'tr', 'nl'],
   defaultLocale: 'en',
   localePrefix: 'always',
 });

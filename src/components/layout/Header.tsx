@@ -24,6 +24,7 @@ export function Header() {
     { href: '/schedule', label: t('nav.schedule') },
     { href: '/about', label: t('nav.about') },
     { href: '/contact', label: t('nav.contact') },
+    { href: '/dashboard', label: t('nav.dashboard') },
   ];
 
   return (

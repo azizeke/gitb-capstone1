@@ -5,6 +5,8 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useRef } from 'react';
 import { buttonStyles } from '@/components/ui';
 import { Link } from '@/i18n/navigation';
+import { LocaleSwitcher } from './LocaleSwitcher';
+import { ThemeToggle } from './ThemeToggle';
 
 export interface MobileMenuProps {
   isOpen: boolean;
@@ -82,6 +84,11 @@ export function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) {
         >
           <X className="h-5 w-5" />
         </button>
+      </div>
+
+      <div className="border-border flex items-center justify-between border-b px-6 py-4">
+        <LocaleSwitcher />
+        <ThemeToggle />
       </div>
 
       <nav className="flex flex-1 flex-col gap-1 px-6 py-6">

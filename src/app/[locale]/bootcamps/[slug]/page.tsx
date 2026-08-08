@@ -1,4 +1,5 @@
 import { Clock, Globe2, Star, Users } from 'lucide-react';
+import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -14,6 +15,32 @@ import { Link } from '@/i18n/navigation';
 
 export function generateStaticParams() {
   return bootcamps.map((bootcamp) => ({ slug: bootcamp.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const bootcamp = bootcamps.find((b) => b.slug === slug);
+
+  // Geçersiz slug'lar için jenerik bir başlık döndürülür; sayfanın
+  // kendisi zaten notFound() ile 404'e düşecek, burada hata fırlatmaya
+  // gerek yok.
+  if (!bootcamp) {
+    return { title: 'Bootcamp' };
+  }
+
+  return {
+    title: bootcamp.title,
+    description: bootcamp.shortDescription,
+    openGraph: {
+      title: bootcamp.title,
+      description: bootcamp.shortDescription,
+      images: [{ url: bootcamp.heroImage }],
+    },
+  };
 }
 
 function getNextCohort(bootcampSlug: string) {
@@ -185,7 +212,7 @@ export default async function BootcampDetailPage({
         </div>
 
         {/* Sticky sidebar */}
-        <aside>
+        <aside className="lg:self-start">
           <Card className="sticky top-24 flex flex-col gap-4">
             <div>
               <span className="font-heading text-3xl font-bold">
