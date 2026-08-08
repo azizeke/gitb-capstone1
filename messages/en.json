@@ -50,6 +50,22 @@
     "switchToLight": "Switch to light theme",
     "switchToDark": "Switch to dark theme"
   },
+  "BootcampDetailPage": {
+    "curriculum": "Curriculum",
+    "hours": "hours",
+    "instructor": "Your Instructor",
+    "reviews": "Student Reviews",
+    "noReviews": "No reviews yet for this program.",
+    "relatedPrograms": "Related Programs",
+    "enrollCta": "Reserve Your Seat",
+    "nextCohort": "Next Cohort",
+    "seatsLeft": "{count} seats left",
+    "cohortFull": "This cohort is full",
+    "alreadyStarted": "Already started",
+    "languages": "Languages",
+    "students": "students",
+    "backToBootcamps": "Back to all bootcamps"
+  },
   "BootcampsPage": {
     "title": "Explore Bootcamps",
     "subtitle": "Find the program that matches where you want your career to go.",

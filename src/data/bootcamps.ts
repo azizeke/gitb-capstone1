@@ -16,29 +16,48 @@ export const bootcamps: Bootcamp[] = [
       'React, Node.js ve PostgreSQL ile sıfırdan production-ready uygulamalar geliştirmeyi öğren.',
     description:
       'Bu program, hiç kod yazmamış birinin bile 16 hafta içinde tam donanımlı bir full-stack geliştirici olmasını hedefler. Frontend tarafında React ve TypeScript, backend tarafında Node.js ve Express, veritabanında PostgreSQL kullanarak gerçek dünya projeleri inşa edeceksin. Program boyunca üç takım projesi ve bir bireysel kapanış projesi tamamlanır.',
-    heroImage:
-      'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=675&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=675&fit=crop',
     tags: ['React', 'Node.js', 'PostgreSQL', 'TypeScript'],
     curriculum: [
       {
         title: 'Web Temelleri ve JavaScript',
         durationHours: 40,
-        lessons: ['HTML & CSS ile semantik yapı', 'Modern JavaScript (ES2023)', 'DOM manipülasyonu', 'Git & GitHub iş akışı'],
+        lessons: [
+          'HTML & CSS ile semantik yapı',
+          'Modern JavaScript (ES2023)',
+          'DOM manipülasyonu',
+          'Git & GitHub iş akışı',
+        ],
       },
       {
         title: 'Frontend: React & TypeScript',
         durationHours: 60,
-        lessons: ['Komponent mimarisi', 'State yönetimi (hooks)', 'TypeScript ile tip güvenliği', 'React Router ile sayfa yönlendirme'],
+        lessons: [
+          'Komponent mimarisi',
+          'State yönetimi (hooks)',
+          'TypeScript ile tip güvenliği',
+          'React Router ile sayfa yönlendirme',
+        ],
       },
       {
         title: 'Backend: Node.js & Express',
         durationHours: 50,
-        lessons: ['REST API tasarımı', 'Kimlik doğrulama (JWT)', 'PostgreSQL ile veri modelleme', 'Hata yönetimi ve loglama'],
+        lessons: [
+          'REST API tasarımı',
+          'Kimlik doğrulama (JWT)',
+          'PostgreSQL ile veri modelleme',
+          'Hata yönetimi ve loglama',
+        ],
       },
       {
         title: 'Deploy ve Kapanış Projesi',
         durationHours: 30,
-        lessons: ['CI/CD temelleri', 'Vercel & Railway ile deploy', 'Kod incelemesi pratikleri', 'Kapanış projesi sunumu'],
+        lessons: [
+          'CI/CD temelleri',
+          'Vercel & Railway ile deploy',
+          'Kod incelemesi pratikleri',
+          'Kapanış projesi sunumu',
+        ],
       },
     ],
     instructorSlug: 'elena-marchetti',
@@ -59,24 +78,36 @@ export const bootcamps: Bootcamp[] = [
       'Ölçeklenebilir komponent mimarisi, performans optimizasyonu ve modern test stratejileri.',
     description:
       'Zaten temel React bilgisine sahip geliştiriciler için tasarlanmış bu program, seni orta seviyeden ileri seviyeye taşır. Komponent tasarım desenlerini, state yönetim stratejilerini (Context, Zustand, React Query), performans profillemeyi ve Testing Library ile test yazmayı derinlemesine işleriz.',
-    heroImage:
-      'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&h=675&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1200&h=675&fit=crop',
     tags: ['React', 'TypeScript', 'Testing', 'Performance'],
     curriculum: [
       {
         title: 'İleri Komponent Mimarisi',
         durationHours: 30,
-        lessons: ['Compound components', 'Custom hooks tasarımı', 'Render optimizasyonu', 'Erişilebilirlik pratikleri'],
+        lessons: [
+          'Compound components',
+          'Custom hooks tasarımı',
+          'Render optimizasyonu',
+          'Erişilebilirlik pratikleri',
+        ],
       },
       {
         title: 'State Yönetimi',
         durationHours: 25,
-        lessons: ["React Query ile sunucu state'i", "Zustand ile istemci state'i", 'Form yönetimi ve validasyon'],
+        lessons: [
+          "React Query ile sunucu state'i",
+          "Zustand ile istemci state'i",
+          'Form yönetimi ve validasyon',
+        ],
       },
       {
         title: 'Test ve Kalite',
         durationHours: 25,
-        lessons: ['Testing Library ile birim test', 'Playwright ile uçtan uca test', 'Storybook ile komponent dokümantasyonu'],
+        lessons: [
+          'Testing Library ile birim test',
+          'Playwright ile uçtan uca test',
+          'Storybook ile komponent dokümantasyonu',
+        ],
       },
     ],
     instructorSlug: 'elena-marchetti',
@@ -97,8 +128,7 @@ export const bootcamps: Bootcamp[] = [
       "Ölçeklenebilir API'ler, mikroservis mimarisi ve güvenli kimlik doğrulama sistemleri kur.",
     description:
       "Bu program, tek bir monolitik API'den mikroservis mimarisine geçişi, mesaj kuyruklarını (RabbitMQ), önbellekleme stratejilerini (Redis) ve güvenlik en iyi pratiklerini kapsar. Kapanışta gerçek trafik simülasyonuyla yük testi yapılan bir proje teslim edilir.",
-    heroImage:
-      'https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=1200&h=675&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=1200&h=675&fit=crop',
     tags: ['Node.js', 'Microservices', 'Redis', 'Security'],
     curriculum: [
       {
@@ -109,7 +139,11 @@ export const bootcamps: Bootcamp[] = [
       {
         title: 'Veri ve Önbellekleme',
         durationHours: 30,
-        lessons: ['PostgreSQL ile ileri sorgular', 'Redis ile önbellekleme', 'Mesaj kuyrukları (RabbitMQ)'],
+        lessons: [
+          'PostgreSQL ile ileri sorgular',
+          'Redis ile önbellekleme',
+          'Mesaj kuyrukları (RabbitMQ)',
+        ],
       },
       {
         title: 'Güvenlik ve Ölçeklendirme',
@@ -134,9 +168,8 @@ export const bootcamps: Bootcamp[] = [
     shortDescription:
       "Veri pipeline'ları kurmayı, ETL süreçlerini ve modern veri ambarlarını öğren.",
     description:
-      'Ham veriyi güvenilir, ölçeklenebilir pipeline\'lara dönüştürmeyi öğreten bu program; Python, SQL, Apache Airflow ve bulut tabanlı veri ambarlarını (Snowflake/BigQuery) kapsar. Gerçek şirket veri setleriyle çalışarak pipeline hatalarını debug etmeyi öğrenirsin.',
-    heroImage:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=675&fit=crop',
+      "Ham veriyi güvenilir, ölçeklenebilir pipeline'lara dönüştürmeyi öğreten bu program; Python, SQL, Apache Airflow ve bulut tabanlı veri ambarlarını (Snowflake/BigQuery) kapsar. Gerçek şirket veri setleriyle çalışarak pipeline hatalarını debug etmeyi öğrenirsin.",
+    heroImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=675&fit=crop',
     tags: ['Python', 'Airflow', 'SQL', 'ETL'],
     curriculum: [
       {
@@ -147,12 +180,20 @@ export const bootcamps: Bootcamp[] = [
       {
         title: 'Pipeline Orkestrasyon',
         durationHours: 35,
-        lessons: ['Apache Airflow ile DAG tasarımı', 'Batch vs streaming işleme', 'Hata yönetimi ve yeniden deneme stratejileri'],
+        lessons: [
+          'Apache Airflow ile DAG tasarımı',
+          'Batch vs streaming işleme',
+          'Hata yönetimi ve yeniden deneme stratejileri',
+        ],
       },
       {
         title: 'Bulut Veri Ambarları',
         durationHours: 30,
-        lessons: ['Snowflake temelleri', 'Veri ambarı modelleme (star schema)', 'Maliyet optimizasyonu'],
+        lessons: [
+          'Snowflake temelleri',
+          'Veri ambarı modelleme (star schema)',
+          'Maliyet optimizasyonu',
+        ],
       },
     ],
     instructorSlug: 'jonas-weber',
@@ -169,18 +210,20 @@ export const bootcamps: Bootcamp[] = [
     priceEUR: 2400,
     rating: 4.5,
     studentCount: 134,
-    shortDescription:
-      "dbt ile analytics engineering ve modern veri ambarı mimarisinde uzmanlaş.",
+    shortDescription: 'dbt ile analytics engineering ve modern veri ambarı mimarisinde uzmanlaş.',
     description:
       'Data Engineering Fundamentals mezunları veya deneyimli veri mühendisleri için tasarlanmış ileri seviye bir program. dbt ile modüler dönüşüm katmanları kurmayı, veri kalitesi testlerini otomatikleştirmeyi ve analitik ekiplerle etkili iş birliği yapmayı öğrenirsin.',
-    heroImage:
-      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=675&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=675&fit=crop',
     tags: ['dbt', 'Data Warehouse', 'Analytics Engineering'],
     curriculum: [
       {
         title: 'dbt ile Dönüşüm Katmanları',
         durationHours: 28,
-        lessons: ['dbt modelleri ve materializasyon', 'Veri kalitesi testleri', 'Dokümantasyon ve lineage'],
+        lessons: [
+          'dbt modelleri ve materializasyon',
+          'Veri kalitesi testleri',
+          'Dokümantasyon ve lineage',
+        ],
       },
       {
         title: 'İleri Modelleme',
@@ -202,12 +245,10 @@ export const bootcamps: Bootcamp[] = [
     priceEUR: 3600,
     rating: 4.8,
     studentCount: 287,
-    shortDescription:
-      'Modelleri sadece eğitmeyi değil, üretime almayı ve izlemeyi öğren.',
+    shortDescription: 'Modelleri sadece eğitmeyi değil, üretime almayı ve izlemeyi öğren.',
     description:
       'Bu program, Jupyter defterinde çalışan bir modelden gerçek kullanıcılara hizmet veren bir production sistemine geçişi kapsar. PyTorch ile model geliştirme, MLflow ile deney takibi, model serving ve izleme (monitoring) konularını gerçek projelerle pekiştirirsin.',
-    heroImage:
-      'https://images.unsplash.com/photo-1555255707-c07966088b7b?w=1200&h=675&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1555255707-c07966088b7b?w=1200&h=675&fit=crop',
     tags: ['PyTorch', 'MLOps', 'Python', 'Model Serving'],
     curriculum: [
       {
@@ -218,12 +259,20 @@ export const bootcamps: Bootcamp[] = [
       {
         title: 'MLOps ve Deploy',
         durationHours: 35,
-        lessons: ['MLflow ile deney takibi', 'Model serving (FastAPI)', 'Konteynerleştirme (Docker)'],
+        lessons: [
+          'MLflow ile deney takibi',
+          'Model serving (FastAPI)',
+          'Konteynerleştirme (Docker)',
+        ],
       },
       {
         title: 'İzleme ve Sürdürme',
         durationHours: 25,
-        lessons: ['Model drift tespiti', 'A/B test tasarımı', 'Üretimde yeniden eğitim stratejileri'],
+        lessons: [
+          'Model drift tespiti',
+          'A/B test tasarımı',
+          'Üretimde yeniden eğitim stratejileri',
+        ],
       },
     ],
     instructorSlug: 'priya-nair',
@@ -240,18 +289,20 @@ export const bootcamps: Bootcamp[] = [
     priceEUR: 2800,
     rating: 4.7,
     studentCount: 198,
-    shortDescription:
-      'LLM tabanlı uygulamalar tasarla: RAG sistemleri, ajanlar ve fine-tuning.',
+    shortDescription: 'LLM tabanlı uygulamalar tasarla: RAG sistemleri, ajanlar ve fine-tuning.',
     description:
-      'Büyük dil modellerini gerçek ürünlere entegre etmeyi öğreten yoğun bir program. Retrieval-Augmented Generation (RAG) mimarileri, prompt mühendisliği, açık kaynak modellerin fine-tuning\'i ve maliyet/performans dengesini yönetmeyi kapsar.',
-    heroImage:
-      'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=675&fit=crop',
+      "Büyük dil modellerini gerçek ürünlere entegre etmeyi öğreten yoğun bir program. Retrieval-Augmented Generation (RAG) mimarileri, prompt mühendisliği, açık kaynak modellerin fine-tuning'i ve maliyet/performans dengesini yönetmeyi kapsar.",
+    heroImage: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=675&fit=crop',
     tags: ['LLM', 'RAG', 'Prompt Engineering', 'Python'],
     curriculum: [
       {
         title: 'LLM Temelleri',
         durationHours: 20,
-        lessons: ['Transformer mimarisine genel bakış', 'Prompt mühendisliği teknikleri', 'Tokenizasyon ve maliyet yönetimi'],
+        lessons: [
+          'Transformer mimarisine genel bakış',
+          'Prompt mühendisliği teknikleri',
+          'Tokenizasyon ve maliyet yönetimi',
+        ],
       },
       {
         title: 'RAG ve Ajanlar',
@@ -273,12 +324,10 @@ export const bootcamps: Bootcamp[] = [
     priceEUR: 3200,
     rating: 4.8,
     studentCount: 356,
-    shortDescription:
-      "AWS, Terraform ve CI/CD pipeline'ları ile altyapıyı kod olarak yönet.",
+    shortDescription: "AWS, Terraform ve CI/CD pipeline'ları ile altyapıyı kod olarak yönet.",
     description:
       'Bu program, geleneksel sistem yönetiminden modern DevOps pratiklerine geçişi hedefler. Infrastructure as Code (Terraform), konteynerleştirme, CI/CD pipeline tasarımı ve gözlemlenebilirlik (observability) araçlarını kapsayan uygulamalı bir müfredat sunar.',
-    heroImage:
-      'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=1200&h=675&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=1200&h=675&fit=crop',
     tags: ['AWS', 'Terraform', 'CI/CD', 'Docker'],
     curriculum: [
       {
@@ -289,7 +338,11 @@ export const bootcamps: Bootcamp[] = [
       {
         title: 'Infrastructure as Code',
         durationHours: 35,
-        lessons: ['Terraform ile altyapı tanımlama', 'Modüler Terraform yapıları', 'State yönetimi'],
+        lessons: [
+          'Terraform ile altyapı tanımlama',
+          'Modüler Terraform yapıları',
+          'State yönetimi',
+        ],
       },
       {
         title: 'CI/CD ve Gözlemlenebilirlik',
@@ -316,7 +369,7 @@ export const bootcamps: Bootcamp[] = [
     description:
       'Konteyner orkestrasyonunda derinleşmek isteyen mühendisler için. Kubernetes küme mimarisi, Helm ile paketleme, GitOps (ArgoCD) ve platform mühendisliği pratiklerini gerçek kümeler üzerinde uygulayarak öğrenirsin.',
     heroImage:
-      'https://images.unsplash.com/photo-1667372393119-90ec2f753e73?w=1200&h=675&fit=crop',
+      'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=1200&h=675&fit=crop&sat=-40',
     tags: ['Kubernetes', 'Helm', 'GitOps', 'Platform Engineering'],
     curriculum: [
       {
@@ -327,7 +380,11 @@ export const bootcamps: Bootcamp[] = [
       {
         title: 'Platform Mühendisliği',
         durationHours: 26,
-        lessons: ['Helm ile paketleme', 'GitOps (ArgoCD)', 'Kendi iç geliştirici platformunu tasarlama'],
+        lessons: [
+          'Helm ile paketleme',
+          'GitOps (ArgoCD)',
+          'Kendi iç geliştirici platformunu tasarlama',
+        ],
       },
     ],
     instructorSlug: 'daniel-osei',
@@ -348,8 +405,7 @@ export const bootcamps: Bootcamp[] = [
       'Sızma testi, güvenlik denetimi ve olay müdahalesi konularında pratik beceriler kazan.',
     description:
       'Bu program, savunma ve saldırı güvenliğinin her iki tarafını da kapsar. Sızma testi metodolojileri, web uygulama güvenlik açıkları (OWASP Top 10), ağ güvenliği ve gerçek olay müdahale senaryolarıyla pratik yapılır. Kapanışta canlı bir "capture the flag" etkinliği düzenlenir.',
-    heroImage:
-      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=675&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=675&fit=crop',
     tags: ['Penetration Testing', 'OWASP', 'Network Security'],
     curriculum: [
       {
@@ -383,17 +439,20 @@ export const bootcamps: Bootcamp[] = [
     rating: 4.6,
     studentCount: 203,
     shortDescription:
-      "iOS ve Android için tek kod tabanından native performanslı uygulamalar geliştir.",
+      'iOS ve Android için tek kod tabanından native performanslı uygulamalar geliştir.',
     description:
       "React Native ile sıfırdan App Store ve Google Play'e uygulama yayınlamayı öğreten kapsamlı bir program. Native modüller, push bildirimleri, offline veri senkronizasyonu ve performans optimizasyonu konularını kapsar.",
-    heroImage:
-      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=675&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&h=675&fit=crop',
     tags: ['React Native', 'iOS', 'Android', 'TypeScript'],
     curriculum: [
       {
         title: 'React Native Temelleri',
         durationHours: 30,
-        lessons: ['Komponent ve navigasyon yapıları', 'Native modüllere giriş', 'Platform bazlı stil yönetimi'],
+        lessons: [
+          'Komponent ve navigasyon yapıları',
+          'Native modüllere giriş',
+          'Platform bazlı stil yönetimi',
+        ],
       },
       {
         title: 'İleri Özellikler',
@@ -420,22 +479,29 @@ export const bootcamps: Bootcamp[] = [
     priceEUR: 2100,
     rating: 4.5,
     studentCount: 276,
-    shortDescription:
-      "SQL, Python ve BI araçlarıyla veriden iş kararlarına giden yolu öğren.",
+    shortDescription: 'SQL, Python ve BI araçlarıyla veriden iş kararlarına giden yolu öğren.',
     description:
-      "İş zekası ve veri analitiği alanına giriş yapmak isteyenler için tasarlanmış bu program; SQL, Python (pandas) ve Power BI / Tableau kullanarak veri setlerini analiz etmeyi, görselleştirmeyi ve paydaşlara sunmayı öğretir.",
-    heroImage: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=1200&h=675&fit=crop&sat=-40',
+      'İş zekası ve veri analitiği alanına giriş yapmak isteyenler için tasarlanmış bu program; SQL, Python (pandas) ve Power BI / Tableau kullanarak veri setlerini analiz etmeyi, görselleştirmeyi ve paydaşlara sunmayı öğretir.',
+    heroImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=675&fit=crop',
     tags: ['SQL', 'Python', 'Power BI', 'Tableau'],
     curriculum: [
       {
         title: 'Veri Analizi Temelleri',
         durationHours: 24,
-        lessons: ['SQL ile veri sorgulama', 'Python (pandas) ile veri temizleme', 'İstatistik temelleri'],
+        lessons: [
+          'SQL ile veri sorgulama',
+          'Python (pandas) ile veri temizleme',
+          'İstatistik temelleri',
+        ],
       },
       {
         title: 'Görselleştirme ve Sunum',
         durationHours: 22,
-        lessons: ["Power BI ile dashboard tasarımı", 'Tableau temelleri', 'Veri hikayeleştirme (storytelling)'],
+        lessons: [
+          'Power BI ile dashboard tasarımı',
+          'Tableau temelleri',
+          'Veri hikayeleştirme (storytelling)',
+        ],
       },
     ],
     instructorSlug: 'jonas-weber',

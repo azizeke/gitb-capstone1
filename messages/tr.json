@@ -50,6 +50,22 @@
     "switchToLight": "Açık temaya geç",
     "switchToDark": "Koyu temaya geç"
   },
+  "BootcampDetailPage": {
+    "curriculum": "Müfredat",
+    "hours": "saat",
+    "instructor": "Eğitmenin",
+    "reviews": "Öğrenci Yorumları",
+    "noReviews": "Bu program için henüz yorum yok.",
+    "relatedPrograms": "İlgili Programlar",
+    "enrollCta": "Yerini Ayırt",
+    "nextCohort": "Sıradaki Kohort",
+    "seatsLeft": "{count} kontenjan kaldı",
+    "cohortFull": "Bu kohort dolu",
+    "alreadyStarted": "Zaten başladı",
+    "languages": "Diller",
+    "students": "öğrenci",
+    "backToBootcamps": "Tüm bootcamp'lere dön"
+  },
   "BootcampsPage": {
     "title": "Bootcamp'leri Keşfet",
     "subtitle": "Kariyerini nereye taşımak istediğine uygun programı bul.",
