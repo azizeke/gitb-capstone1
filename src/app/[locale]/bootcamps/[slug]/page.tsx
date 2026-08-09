@@ -172,7 +172,7 @@ export default async function BootcampDetailPage({
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {bootcampReviews.map((review) => (
                   <Card key={review.id}>
-                    <div className="mb-2 flex" aria-label={`${review.rating}/5`}>
+                    <div className="mb-2 flex" role="img" aria-label={`${review.rating}/5`}>
                       {Array.from({ length: 5 }).map((_, i) => (
                         <Star
                           key={i}

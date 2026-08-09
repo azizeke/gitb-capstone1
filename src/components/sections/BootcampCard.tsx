@@ -74,6 +74,7 @@ export function BootcampCard({ bootcamp, categoryName, priority = false }: Bootc
           </div>
           <Link
             href={`/bootcamps/${bootcamp.slug}`}
+            aria-label={`${t('viewProgram')}: ${bootcamp.title}`}
             className="text-primary text-sm font-medium hover:underline"
           >
             {t('viewProgram')}
