@@ -25,8 +25,8 @@ export function Features() {
     <ScrollReveal>
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-10 text-center">
-          <h2 className="font-heading text-2xl font-bold sm:text-3xl">{t('title')}</h2>
-          <p className="text-muted mt-2">{t('subtitle')}</p>
+          <h2 className="font-heading text-3xl font-bold sm:text-4xl">{t('title')}</h2>
+          <p className="text-muted mt-3 text-lg">{t('subtitle')}</p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

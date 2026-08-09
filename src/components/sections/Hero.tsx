@@ -1,8 +1,8 @@
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import { buttonStyles } from '@/components/ui';
 import { Link } from '@/i18n/navigation';
+import { HeroBackground } from './HeroBackground';
 
 const miniStats: { key: 'graduates' | 'employmentRate' | 'partners'; value: string }[] = [
   { key: 'graduates', value: '2,400+' },
@@ -16,42 +16,40 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&h=1080&fit=crop"
-          alt=""
-          fill
-          priority
-          className="object-cover opacity-10"
-        />
-      </div>
+      <HeroBackground />
 
-      <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-28">
-        <span className="bg-primary/10 text-primary inline-flex items-center rounded-full px-3 py-1 text-xs font-medium">
+      <div className="mx-auto max-w-5xl px-6 py-24 text-center sm:py-32">
+        <span className="bg-primary/10 text-primary inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium">
           {t('badge')}
         </span>
 
-        <h1 className="font-heading mt-6 text-4xl font-bold tracking-tight text-balance sm:text-5xl md:text-6xl">
+        <h1 className="font-heading mt-8 text-5xl font-bold tracking-tight text-balance sm:text-6xl md:text-7xl">
           {t('title')}
         </h1>
 
-        <p className="text-muted mx-auto mt-6 max-w-2xl text-lg text-balance">{t('subtitle')}</p>
+        <p className="text-muted mx-auto mt-8 max-w-2xl text-xl text-balance">{t('subtitle')}</p>
 
-        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link href="/auth/register" className={buttonStyles('primary', 'lg')}>
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Link
+            href="/auth/register"
+            className={buttonStyles('primary', 'lg') + ' px-8 py-4 text-base'}
+          >
             {t('ctaPrimary')}
-            <ArrowRight className="h-4 w-4" />
+            <ArrowRight className="h-5 w-5" />
           </Link>
-          <Link href="/bootcamps" className={buttonStyles('secondary', 'lg')}>
+          <Link
+            href="/bootcamps"
+            className={buttonStyles('secondary', 'lg') + ' px-8 py-4 text-base'}
+          >
             {t('ctaSecondary')}
           </Link>
         </div>
 
-        <div className="border-border mt-14 grid grid-cols-3 gap-4 border-t pt-8 sm:gap-8">
+        <div className="border-border mt-16 grid grid-cols-3 gap-4 border-t pt-10 sm:gap-8">
           {miniStats.map((stat) => (
             <div key={stat.key}>
-              <p className="font-heading text-2xl font-bold sm:text-3xl">{stat.value}</p>
-              <p className="text-muted mt-1 text-xs sm:text-sm">{tStats(stat.key)}</p>
+              <p className="font-heading text-3xl font-bold sm:text-4xl">{stat.value}</p>
+              <p className="text-muted mt-1.5 text-sm sm:text-base">{tStats(stat.key)}</p>
             </div>
           ))}
         </div>

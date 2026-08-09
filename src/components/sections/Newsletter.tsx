@@ -24,8 +24,8 @@ export function Newsletter() {
 
   return (
     <section className="mx-auto max-w-2xl px-6 py-16 text-center">
-      <h2 className="font-heading text-2xl font-bold sm:text-3xl">{t('title')}</h2>
-      <p className="text-muted mt-2">{t('subtitle')}</p>
+      <h2 className="font-heading text-3xl font-bold sm:text-4xl">{t('title')}</h2>
+      <p className="text-muted mt-3 text-lg">{t('subtitle')}</p>
 
       {status === 'success' ? (
         <p className="bg-success/10 text-success mt-6 rounded-md px-4 py-3 text-sm font-medium">

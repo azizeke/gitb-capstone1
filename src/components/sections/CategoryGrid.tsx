@@ -13,8 +13,8 @@ export function CategoryGrid() {
       <section className="bg-surface py-16">
         <div className="mx-auto max-w-6xl px-6">
           <div className="mb-10 text-center">
-            <h2 className="font-heading text-2xl font-bold sm:text-3xl">{t('title')}</h2>
-            <p className="text-muted mt-2">{t('subtitle')}</p>
+            <h2 className="font-heading text-3xl font-bold sm:text-4xl">{t('title')}</h2>
+            <p className="text-muted mt-3 text-lg">{t('subtitle')}</p>
           </div>
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">

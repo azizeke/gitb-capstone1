@@ -8,7 +8,7 @@ export function ClosingCta() {
   return (
     <section className="bg-primary text-primary-foreground py-16">
       <div className="mx-auto max-w-2xl px-6 text-center">
-        <h2 className="font-heading text-2xl font-bold sm:text-3xl">{t('title')}</h2>
+        <h2 className="font-heading text-3xl font-bold sm:text-4xl">{t('title')}</h2>
         <p className="mt-2 opacity-90">{t('subtitle')}</p>
         <Link
           href="/auth/register"

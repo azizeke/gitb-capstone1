@@ -14,8 +14,8 @@ export function FeaturedPrograms() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-4">
           <div>
-            <h2 className="font-heading text-2xl font-bold sm:text-3xl">{t('title')}</h2>
-            <p className="text-muted mt-2">{t('subtitle')}</p>
+            <h2 className="font-heading text-3xl font-bold sm:text-4xl">{t('title')}</h2>
+            <p className="text-muted mt-3 text-lg">{t('subtitle')}</p>
           </div>
           <Link href="/bootcamps" className="text-primary text-sm font-medium hover:underline">
             {t('viewAll')} →
