@@ -267,7 +267,9 @@
   "HomePage": {
     "hero": {
       "badge": "AI-gedreven Leerplatform",
-      "title": "Bouw de IT-carrière waar de wereld naar op zoek is",
+      "titlePrefix": "Bouw de ",
+      "titleHighlight": "IT-carrière",
+      "titleSuffix": " waar de wereld naar op zoek is",
       "subtitle": "Sluit je aan bij een bootcamp gebouwd door echte engineers, met echte projecten en echte aannameresultaten.",
       "ctaPrimary": "Gratis Beginnen met Leren",
       "ctaSecondary": "Bekijk Programma's"

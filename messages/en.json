@@ -267,7 +267,9 @@
   "HomePage": {
     "hero": {
       "badge": "AI-Powered Learning Platform",
-      "title": "Build the IT Career the World Is Hiring For",
+      "titlePrefix": "Build the ",
+      "titleHighlight": "IT Career",
+      "titleSuffix": " the World Is Hiring For",
       "subtitle": "Join a bootcamp built with real engineers, real projects, and real hiring outcomes.",
       "ctaPrimary": "Start Learning Free",
       "ctaSecondary": "Browse Programs"

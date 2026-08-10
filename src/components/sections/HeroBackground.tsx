@@ -16,26 +16,40 @@ const heroImages = [
   'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1920&h=1080&fit=crop',
 ];
 
-const ROTATE_INTERVAL_MS = 6000;
+const VISIBLE_DURATION_MS = 5000;
+const TRANSITION_DURATION_MS = 1000;
 
 /**
- * Hero arka planında birkaç görsel arasında yumuşak bir opacity
- * geçişiyle dönen slideshow. `prefers-reduced-motion` tercih edilmişse
- * otomatik döngü hiç başlatılmıyor, sadece ilk görsel sabit kalıyor
- * (F-01/F-02'deki aynı erişilebilirlik kuralı burada da geçerli).
+ * Hero arka planında birkaç görsel arasında dönen slideshow. Geçiş iki
+ * fazlı: önce ~1 saniyelik gri bir ara katman belirir, sonra bir sonraki
+ * görsel devreye girer (düz opacity crossfade yerine bilinçli olarak bu
+ * iki adımlı geçiş tercih edildi). `prefers-reduced-motion` tercih
+ * edilmişse döngü hiç başlamıyor, sadece ilk görsel sabit kalıyor.
  */
 export function HeroBackground() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReducedMotion) return;
 
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % heroImages.length);
-    }, ROTATE_INTERVAL_MS);
+    let timeoutId: ReturnType<typeof setTimeout>;
 
-    return () => clearInterval(interval);
+    function scheduleNext() {
+      timeoutId = setTimeout(() => {
+        setIsTransitioning(true);
+
+        timeoutId = setTimeout(() => {
+          setActiveIndex((prev) => (prev + 1) % heroImages.length);
+          setIsTransitioning(false);
+          scheduleNext();
+        }, TRANSITION_DURATION_MS);
+      }, VISIBLE_DURATION_MS);
+    }
+
+    scheduleNext();
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
@@ -48,12 +62,27 @@ export function HeroBackground() {
           fill
           priority={index === 0}
           className={cn(
-            'object-cover transition-opacity duration-1000',
+            'object-cover transition-opacity duration-700',
             index === activeIndex ? 'opacity-100' : 'opacity-0',
           )}
         />
       ))}
-      <div className="bg-background/80 absolute inset-0" />
+
+      {/* Geçişin "grimsi ara adımı" — bir sonraki görsele geçmeden önce belirir */}
+      <div
+        className={cn(
+          'absolute inset-0 bg-neutral-500 transition-opacity duration-500',
+          isTransitioning ? 'opacity-50' : 'opacity-0',
+        )}
+      />
+
+      {/*
+       * Hero, tema ne olursa olsun (light/dark) her zaman koyu bir "ada"
+       * gibi davranır — bu yüzden overlay bilinçli olarak design token'dan
+       * DEĞİL, sabit bir koyu renkten geliyor. Amaç: metin (her zaman
+       * beyaz) her koşulda net okunabilsin, referans sitedeki gibi.
+       */}
+      <div className="absolute inset-0 bg-slate-950/60" />
     </div>
   );
 }

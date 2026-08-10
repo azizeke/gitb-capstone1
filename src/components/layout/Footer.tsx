@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import type { SVGProps } from 'react';
 import { Link } from '@/i18n/navigation';
+import { LogoMark } from './LogoMark';
 
 /**
  * lucide-react marka/logo ikonlarını (Facebook, Instagram, LinkedIn, Twitter)
@@ -82,7 +83,10 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="col-span-2 md:col-span-1">
-            <span className="font-heading text-lg font-bold">Global IT</span>
+            <span className="font-heading flex items-center gap-2 text-lg font-bold">
+              <LogoMark />
+              Global IT
+            </span>
             <p className="text-muted mt-2 text-sm">{t('tagline')}</p>
           </div>
 

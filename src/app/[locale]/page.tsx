@@ -21,7 +21,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'HomePage' });
 
   return {
-    title: t('hero.title'),
+    title: `${t('hero.titlePrefix')}${t('hero.titleHighlight')}${t('hero.titleSuffix')}`,
     description: t('hero.subtitle'),
   };
 }

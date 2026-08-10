@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { buttonStyles } from '@/components/ui';
 import { Link } from '@/i18n/navigation';
 import { LocaleSwitcher } from './LocaleSwitcher';
+import { LogoMark } from './LogoMark';
 import { MobileMenu } from './MobileMenu';
 import { ThemeToggle } from './ThemeToggle';
 
@@ -30,7 +31,8 @@ export function Header() {
   return (
     <header className="border-border bg-background/80 sticky top-0 z-40 border-b backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="/" className="font-heading text-lg font-bold">
+        <Link href="/" className="font-heading flex items-center gap-2 text-lg font-bold">
+          <LogoMark />
           {t('logo')}
         </Link>
 

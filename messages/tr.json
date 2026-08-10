@@ -267,7 +267,9 @@
   "HomePage": {
     "hero": {
       "badge": "Yapay Zeka Destekli Öğrenme Platformu",
-      "title": "Dünyanın Aradığı IT Kariyerini İnşa Et",
+      "titlePrefix": "Dünyanın Aradığı ",
+      "titleHighlight": "IT Kariyerini",
+      "titleSuffix": " İnşa Et",
       "subtitle": "Gerçek mühendisler, gerçek projeler ve gerçek işe alım sonuçlarıyla kurulmuş bir bootcamp'e katıl.",
       "ctaPrimary": "Ücretsiz Öğrenmeye Başla",
       "ctaSecondary": "Programlara Göz At"

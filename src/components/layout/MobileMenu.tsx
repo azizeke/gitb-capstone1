@@ -6,6 +6,7 @@ import { useEffect, useRef } from 'react';
 import { buttonStyles } from '@/components/ui';
 import { Link } from '@/i18n/navigation';
 import { LocaleSwitcher } from './LocaleSwitcher';
+import { LogoMark } from './LogoMark';
 import { ThemeToggle } from './ThemeToggle';
 
 export interface MobileMenuProps {
@@ -74,7 +75,10 @@ export function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) {
       className="bg-background fixed inset-0 z-50 flex flex-col md:hidden"
     >
       <div className="border-border flex items-center justify-between border-b px-6 py-4">
-        <span className="font-heading text-lg font-bold">{tHeader('logo')}</span>
+        <span className="font-heading flex items-center gap-2 text-lg font-bold">
+          <LogoMark />
+          {tHeader('logo')}
+        </span>
         <button
           ref={closeButtonRef}
           type="button"
