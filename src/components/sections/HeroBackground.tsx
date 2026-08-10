@@ -49,7 +49,7 @@ export function HeroBackground() {
           priority={index === 0}
           className={cn(
             'object-cover transition-opacity duration-1000',
-            index === activeIndex ? 'opacity-80' : 'opacity-0',
+            index === activeIndex ? 'opacity-100' : 'opacity-0',
           )}
         />
       ))}

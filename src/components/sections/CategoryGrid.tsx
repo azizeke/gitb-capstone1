@@ -3,7 +3,66 @@ import type { LucideIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { categories } from '@/data/categories';
 import { Link } from '@/i18n/navigation';
+import { cn } from '@/lib/cn';
 import { ScrollReveal } from './ScrollReveal';
+
+/*
+ * Kategorileri görsel olarak birbirinden ayırmak için her birine ayrı bir
+ * renk atanıyor. Bu renkler marka renk paletimizin (primary/secondary/vb.)
+ * bir parçası DEĞİL — kasıtlı olarak daha geniş bir palet kullanıldı, çünkü
+ * amaç marka kimliği değil, 8 farklı kategoriyi ilk bakışta ayırt edilebilir
+ * kılmak. Tailwind'in derleme zamanı tarayıcısının bu class'ları
+ * bulabilmesi için (dinamik string birleştirme yerine) tam class adları
+ * burada literal olarak yazılmalı.
+ */
+const categoryColors: Record<string, { iconBg: string; iconText: string; hoverBorder: string }> = {
+  programming: {
+    iconBg: 'bg-indigo-500/10',
+    iconText: 'text-indigo-600',
+    hoverBorder: 'hover:border-indigo-500',
+  },
+  'data-engineering': {
+    iconBg: 'bg-cyan-500/10',
+    iconText: 'text-cyan-600',
+    hoverBorder: 'hover:border-cyan-500',
+  },
+  'ai-ml': {
+    iconBg: 'bg-purple-500/10',
+    iconText: 'text-purple-600',
+    hoverBorder: 'hover:border-purple-500',
+  },
+  'cloud-devops': {
+    iconBg: 'bg-sky-500/10',
+    iconText: 'text-sky-600',
+    hoverBorder: 'hover:border-sky-500',
+  },
+  cybersecurity: {
+    iconBg: 'bg-rose-500/10',
+    iconText: 'text-rose-600',
+    hoverBorder: 'hover:border-rose-500',
+  },
+  'mobile-dev': {
+    iconBg: 'bg-emerald-500/10',
+    iconText: 'text-emerald-600',
+    hoverBorder: 'hover:border-emerald-500',
+  },
+  'data-analytics': {
+    iconBg: 'bg-amber-500/10',
+    iconText: 'text-amber-600',
+    hoverBorder: 'hover:border-amber-500',
+  },
+  'full-stack': {
+    iconBg: 'bg-teal-500/10',
+    iconText: 'text-teal-600',
+    hoverBorder: 'hover:border-teal-500',
+  },
+};
+
+const defaultCategoryColor = {
+  iconBg: 'bg-primary/10',
+  iconText: 'text-primary',
+  hoverBorder: 'hover:border-primary',
+};
 
 export function CategoryGrid() {
   const t = useTranslations('HomePage.categories');
@@ -25,14 +84,24 @@ export function CategoryGrid() {
               // gösterilir, uygulama çökmez.
               const Icon =
                 (Icons[category.icon as keyof typeof Icons] as LucideIcon) ?? Icons.Layers;
+              const colors = categoryColors[category.slug] ?? defaultCategoryColor;
 
               return (
                 <Link
                   key={category.slug}
                   href={`/bootcamps?category=${category.slug}`}
-                  className="bg-background border-border hover:border-primary flex flex-col items-center gap-3 rounded-lg border p-6 text-center transition-colors"
+                  className={cn(
+                    'bg-background border-border flex flex-col items-center gap-3 rounded-lg border p-6 text-center transition-colors',
+                    colors.hoverBorder,
+                  )}
                 >
-                  <span className="bg-primary/10 text-primary flex h-12 w-12 items-center justify-center rounded-full">
+                  <span
+                    className={cn(
+                      'flex h-12 w-12 items-center justify-center rounded-full',
+                      colors.iconBg,
+                      colors.iconText,
+                    )}
+                  >
                     <Icon className="h-6 w-6" />
                   </span>
                   <span className="text-sm font-medium">{category.name}</span>
