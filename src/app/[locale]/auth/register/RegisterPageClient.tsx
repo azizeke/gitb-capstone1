@@ -55,7 +55,7 @@ export default function RegisterPageClient() {
 
   useEffect(() => {
     if (status !== 'success') return;
-    const timeout = setTimeout(() => router.push('/'), 1200);
+    const timeout = setTimeout(() => router.push('/dashboard?view=student'), 1200);
     return () => clearTimeout(timeout);
   }, [status, router]);
 

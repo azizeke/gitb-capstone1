@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import { Suspense } from 'react';
 import DashboardPageClient from './DashboardPageClient';
 
 export async function generateMetadata({
@@ -20,7 +21,15 @@ export async function generateMetadata({
  * tamamen sabit mock verilerdir; hiçbir gerçek hesaba bağlı değildir.
  * Asıl interaktif içerik (öğrenci seçici dropdown dahil) DashboardPageClient
  * içinde — bu dosya sadece sayfa metadata'sını (title, noindex) sağlıyor.
+ *
+ * Suspense sınırı zorunlu: DashboardPageClient, ?view=student query
+ * param'ını okumak için useSearchParams kullanıyor, Next.js bunu bir
+ * Suspense sınırı içinde kullanmayı gerektiriyor.
  */
 export default function DashboardPage() {
-  return <DashboardPageClient />;
+  return (
+    <Suspense fallback={null}>
+      <DashboardPageClient />
+    </Suspense>
+  );
 }
