@@ -4,9 +4,10 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useMemo, useState } from 'react';
 import { CountdownTimer } from '@/components/sections/CountdownTimer';
 import { Card, Select } from '@/components/ui';
-import { bootcamps } from '@/data/bootcamps';
+import { getBootcamps } from '@/data/bootcamps';
 import { cohorts } from '@/data/cohorts';
 import { Link } from '@/i18n/navigation';
+import type { Locale } from '@/types';
 
 /**
  * Kohort başlangıç saati veride tutulmuyor (sadece tarih var), bu yüzden
@@ -24,14 +25,15 @@ export default function SchedulePageClient() {
   const today = new Date().toISOString().slice(0, 10);
 
   const enrichedCohorts = useMemo(() => {
+    const localizedBootcamps = getBootcamps(locale as Locale);
     return cohorts
       .map((cohort) => ({
         ...cohort,
-        bootcamp: bootcamps.find((b) => b.slug === cohort.bootcampSlug),
+        bootcamp: localizedBootcamps.find((b) => b.slug === cohort.bootcampSlug),
       }))
       .filter((c) => c.bootcamp)
       .sort((a, b) => a.startDate.localeCompare(b.startDate));
-  }, []);
+  }, [locale]);
 
   const nextCohort = enrichedCohorts.find((c) => c.startDate >= today);
 

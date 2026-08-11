@@ -1,15 +1,16 @@
+// TESTMARKER123
 'use client';
 
 import { Search, X } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 import { useMemo, useTransition } from 'react';
 import { BootcampCard } from '@/components/sections/BootcampCard';
 import { Input, Select, Skeleton } from '@/components/ui';
-import { bootcamps } from '@/data/bootcamps';
+import { getBootcamps } from '@/data/bootcamps';
 import { categories } from '@/data/categories';
 import { useRouter, usePathname } from '@/i18n/navigation';
-import type { Level } from '@/types';
+import type { Level, Locale } from '@/types';
 
 type SortOption = 'popular' | 'price' | 'duration';
 
@@ -26,6 +27,7 @@ type SortOption = 'popular' | 'price' | 'duration';
 export function BootcampsPageClient() {
   const t = useTranslations('BootcampsPage');
   const tCommon = useTranslations('Common');
+  const locale = useLocale() as Locale;
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -67,7 +69,7 @@ export function BootcampsPageClient() {
   }
 
   const filtered = useMemo(() => {
-    let result = bootcamps;
+    let result = getBootcamps(locale);
 
     if (query.trim()) {
       const q = query.trim().toLowerCase();
@@ -95,7 +97,7 @@ export function BootcampsPageClient() {
     }
 
     return sorted;
-  }, [query, selectedCategories, level, sort]);
+  }, [query, selectedCategories, level, sort, locale]);
 
   const hasActiveFilters = query !== '' || selectedCategories.length > 0 || level !== null;
 

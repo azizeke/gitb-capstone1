@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { bootcamps } from '@/data/bootcamps';
+import { bootcampSlugs } from '@/data/bootcamps';
 import { routing } from '@/i18n/routing';
 import { siteUrl } from '@/lib/site-config';
 
@@ -29,9 +29,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       });
     }
 
-    for (const bootcamp of bootcamps) {
+    for (const slug of bootcampSlugs) {
       entries.push({
-        url: `${siteUrl}/${locale}/bootcamps/${bootcamp.slug}`,
+        url: `${siteUrl}/${locale}/bootcamps/${slug}`,
         lastModified: new Date(),
       });
     }

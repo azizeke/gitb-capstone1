@@ -6,24 +6,25 @@ import { notFound } from 'next/navigation';
 import { BootcampCard } from '@/components/sections/BootcampCard';
 import { CurriculumAccordion } from '@/components/sections/CurriculumAccordion';
 import { Badge, buttonStyles, Card } from '@/components/ui';
-import { bootcamps } from '@/data/bootcamps';
+import { bootcampSlugs, getBootcampBySlug, getBootcamps } from '@/data/bootcamps';
 import { categories } from '@/data/categories';
 import { cohorts } from '@/data/cohorts';
 import { instructors } from '@/data/instructors';
 import { testimonials } from '@/data/testimonials';
 import { Link } from '@/i18n/navigation';
+import type { Locale } from '@/types';
 
 export function generateStaticParams() {
-  return bootcamps.map((bootcamp) => ({ slug: bootcamp.slug }));
+  return bootcampSlugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const bootcamp = bootcamps.find((b) => b.slug === slug);
+  const { locale, slug } = await params;
+  const bootcamp = getBootcampBySlug(locale as Locale, slug);
 
   // Geçersiz slug'lar için jenerik bir başlık döndürülür; sayfanın
   // kendisi zaten notFound() ile 404'e düşecek, burada hata fırlatmaya
@@ -56,10 +57,10 @@ function getNextCohort(bootcampSlug: string) {
 export default async function BootcampDetailPage({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { slug } = await params;
-  const bootcamp = bootcamps.find((b) => b.slug === slug);
+  const { locale, slug } = await params;
+  const bootcamp = getBootcampBySlug(locale as Locale, slug);
 
   if (!bootcamp) {
     notFound();
@@ -70,7 +71,7 @@ export default async function BootcampDetailPage({
 
   const category = categories.find((c) => c.slug === bootcamp.categorySlug);
   const instructor = instructors.find((i) => i.slug === bootcamp.instructorSlug);
-  const relatedBootcamps = bootcamps
+  const relatedBootcamps = getBootcamps(locale as Locale)
     .filter((b) => b.categorySlug === bootcamp.categorySlug && b.slug !== bootcamp.slug)
     .slice(0, 3);
   const bootcampReviews = testimonials.filter((r) => r.bootcampSlug === bootcamp.slug);

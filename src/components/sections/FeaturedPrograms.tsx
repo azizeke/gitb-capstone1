@@ -1,13 +1,17 @@
-import { useTranslations } from 'next-intl';
-import { bootcamps } from '@/data/bootcamps';
+import { useLocale, useTranslations } from 'next-intl';
+import { getBootcamps } from '@/data/bootcamps';
 import { categories } from '@/data/categories';
 import { Link } from '@/i18n/navigation';
+import type { Locale } from '@/types';
 import { BootcampCard } from './BootcampCard';
 import { ScrollReveal } from './ScrollReveal';
 
 export function FeaturedPrograms() {
   const t = useTranslations('HomePage.featuredPrograms');
-  const featured = bootcamps.filter((b) => b.featured).slice(0, 4);
+  const locale = useLocale() as Locale;
+  const featured = getBootcamps(locale)
+    .filter((b) => b.featured)
+    .slice(0, 4);
 
   return (
     <ScrollReveal>
